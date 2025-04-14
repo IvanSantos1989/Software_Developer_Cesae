@@ -3,30 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta> name="author" content="Ivanildo Santos">
-    <meta> name="description" content="Primeira página HTML com Bootstrap e JavaScript.">
-    <meta> name="keywords" content="HTML, CSS, Bootstrap, JavaScript"> -->
     <title>Old School website</title>
 </head>
 <body>
-    <h1>IVAN DEV</h1>
-    
-    <p>Eu sou estudante de desenvolvimento web e mobile.</p>
-    <p>Os nerds de hoje serão os ricos do amanhã</p>
-    <img src="midias/webdev anime.png" width="150">
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>IVAN DEV</h1>
+        <p>Eu sou estudante de desenvolvimento web e mobile.</p>
+        <p>Os nerds de hoje serão os ricos do amanhã.</p>
+        <img src="midias/webdev anime.png" width="150" alt="Imagem de desenvolvimento web">
+    </header>
 
-    <ol type="1">
-        <h2>Minhas qualificações</h2>
+    <!-- Seção de habilidades -->
+    <main>
+        <section>
+            <h3><b>Skills</b></h3>
+            <ol type="1">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ol>
+            <div>
+                <a href="https://github.com/IvanSantos1989" target="_blank">GitHub</a> &nbsp;
+                <a href="https://www.linkedin.com/in/ivanildo-santos-4a566b210" target="_blank">Linkedin</a>
+                <br><br>
+                
+                <iframe width="200" height="200" src="https://www.youtube.com/embed/Ejkb_YpuHWs?autoplay=1&loop=1&mute=1"
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+                <caption><br>Curso em vídeo com Gustavo Guanabara</caption>
+            </div>
+        </section>
 
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>PHP</li>
-        <li>Python</li>
-        <li>Java</li>
-            <br>
-        <a href="https://github.com/IvanSantos1989" target="_blank">Meu GitHub</a>
-    </ol>
-    
+        <!-- Seção de contato -->
+        <section>
+            <h3><b>Entre em contato comigo</b></h3>
+            <form action="processa.php" method="post">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required><br><br>
+                <label for="mensagem">Mensagem</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <!-- Seção de background -->
+        <section>
+            <h3 style="text-align: center; margin-top: 20px; margin-bottom: 20px;"><b>Meu background</b></h3>
+            <table style="margin: 0 auto; text-align: center;">
+                <tr>
+                    <th>Experiência Profissional</th>
+                    <th>Formação Acadêmica</th>
+                </tr>
+                <tr>
+                    <td style="padding: 20px;">Estágio curricular de Desenvolvimento Web(front-end) - Empresa CaseOf Creative</td>
+                    <td style="padding: 20px;">CTeSP Desenvolvimento Web e Dispositivos Móveis - ISLA Gaia</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer style="text-align: center; margin: 0 auto;">
+        <p>© 2025 IVAN DEV. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
