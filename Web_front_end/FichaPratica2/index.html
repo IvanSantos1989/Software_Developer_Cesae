@@ -3,59 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Old School website</title>
+    <title>Web Dev Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Menu de navegação fixo -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#ivandev">Início</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#background">Background</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
     <!-- Cabeçalho da página -->
     <header>
-        <h1>IVAN DEV</h1>
+        <h1 id="ivandev">IVAN DEV</h1>
         <p>Eu sou estudante de desenvolvimento web e mobile.</p>
-        <p>Os nerds de hoje serão os ricos do amanhã.</p>
-        <img src="midias/webdev anime.png" width="150" alt="Imagem de desenvolvimento web">
+        <p>"Os nerds de hoje serão os ricos do amanhã."</p><br>
+        <img id="animedev" src="midias/webdev anime.png" width="300" alt="Imagem de desenvolvimento web">
     </header>
 
     <!-- Seção de habilidades -->
     <main>
-        <section>
-            <h3><b>Skills</b></h3>
-            <ol type="1">
+        <section id="skills">
+            <h3 ><b>Skills</b></h3><br>
+            <ol class="listOrder" type="1">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>PHP</li>
                 <li>Python</li>
                 <li>Java</li>
+                <li>SQL</li>
             </ol>
             <div>
-                <a href="https://github.com/IvanSantos1989" target="_blank">GitHub</a> &nbsp;
-                <a href="https://www.linkedin.com/in/ivanildo-santos-4a566b210" target="_blank">Linkedin</a>
+                <a href="https://github.com/IvanSantos1989" target="_blank" aria-label="Acesse meu GitHub">GitHub</a> &nbsp;
+                <a href="https://www.linkedin.com/in/ivanildo-santos-4a566b210" target="_blank" aria-label="Acesse meu LinkedIn">LinkedIn</a>
                 <br><br>
                 
-                <iframe width="200" height="200" src="https://www.youtube.com/embed/Ejkb_YpuHWs?autoplay=1&loop=1&mute=1"
-                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-                </iframe>
-                <caption><br>Curso em vídeo com Gustavo Guanabara</caption>
+                <figure>
+                    <iframe width="400" height="300" src="https://www.youtube.com/embed/Ejkb_YpuHWs?autoplay=1&loop=1&mute=1"
+                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                    </iframe>
+                    <figcaption>Curso em vídeo com Gustavo Guanabara</figcaption>
+                </figure>
             </div>
         </section>
 
-        <!-- Seção de contato -->
-        <section>
-            <h3><b>Entre em contato comigo</b></h3>
-            <form action="processa.php" method="post">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" required><br><br>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone" required><br><br>
-                <label for="mensagem">Mensagem</label><br>
-                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-
         <!-- Seção de background -->
-        <section>
+        <section id="background">
             <h3 style="text-align: center; margin-top: 20px; margin-bottom: 20px;"><b>Meu background</b></h3>
             <table style="margin: 0 auto; text-align: center;">
                 <tr>
@@ -67,6 +65,22 @@
                     <td style="padding: 20px;">CTeSP Desenvolvimento Web e Dispositivos Móveis - ISLA Gaia</td>
                 </tr>
             </table>
+        </section>
+
+        <!-- Seção de contato -->
+        <section id="contato"><br>
+            <h3 style="text-align: center; margin-top: 20px; margin-bottom: 20px;"><b>Entre em contato comigo</b></h3>
+            <form action="processa.php" method="post">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required><br><br>
+                <label for="mensagem">Mensagem</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Enviar">
+            </form>
         </section>
     </main>
 
