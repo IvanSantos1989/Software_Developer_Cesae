@@ -112,14 +112,14 @@ main {
         margin: 10px 0; /* Espaçamento entre os itens */
         border-radius: 5px; /* Bordas arredondadas */
         font-weight: bold; /* Deixa o texto em negrito */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra suave */
         transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves */
     }
     
     .listOrder li:hover {
         background: linear-gradient(to right, #4facfe, #00f2fe); /* Inverte o gradiente ao passar o mouse */
         transform: scale(1.05); /* Aumenta ligeiramente o item ao passar o mouse */
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* Aumenta a sombra ao passar o mouse */
     }
 
 #skills {
@@ -129,7 +129,7 @@ main {
 }
 
 #ivandev {
-    color: black; /* Define a cor do texto como preto */
+    color: white; /* Define a cor do texto como preto */
     text-align: center; /* Centraliza o texto */
     margin: 20px; /* Adiciona espaço abaixo do elemento */
     background: linear-gradient(to right, #1e3c72, #2a5298); /* Gradiente de fundo */
