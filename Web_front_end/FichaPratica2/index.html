@@ -1,92 +1,268 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Dev Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ivan Dev - Portfólio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Menu de navegação fixo -->
-    <nav id="navbar">
-        <ul>
-            <li><a href="#ivandev">Início</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#background">Background</a></li>
-            <li><a href="#contato">Contato</a></li>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">IVAN DEV</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#ivandev">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#background">Background</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destaques">Destaques</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
         </ul>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Cabeçalho da página -->
-    <header>
-        <h1 id="ivandev">IVAN DEV <\></h1>
-        <p>Eu sou estudante de desenvolvimento web e mobile.</p>
-        <p>"Os nerds de hoje serão os ricos do amanhã."</p><br>
-        <img id="animedev" src="midias/webdev anime2.png" width="300" alt="Imagem de desenvolvimento web">
-    </header>
+  <!-- Cabeçalho -->
+  <header class="text-center py-5 mt-5 bg-primary text-white">
+    <h1 id="ivandev">IVAN DEV <\></h1>
+    <p>Estudante de desenvolvimento web e mobile</p>
+    <p><em>"Os nerds de hoje serão os ricos do amanhã."</em></p>
+    <img id="animedev" src="midias/webdev anime2.png" class="img-fluid rounded mt-3" width="300" alt="Imagem de desenvolvimento web">
+  </header>
 
-    <!-- Seção de habilidades -->
-    <main>
-        <section id="skills">
-            <h3 ><b>Skills</b></h3><br>
-            <ol class="listOrder" type="1">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>PHP</li>
-                <li>Python</li>
-                <li>Java</li>
-                <li>SQL</li>
-            </ol>
-            <div>
-                <a href="https://github.com/IvanSantos1989" target="_blank" aria-label="Acesse meu GitHub">GitHub</a> &nbsp;
-                <a href="https://www.linkedin.com/in/ivanildo-santos-4a566b210" target="_blank" aria-label="Acesse meu LinkedIn">LinkedIn</a>
-                <br><br>
-                
-                <figure>
-                    <iframe width="400" height="300" src="https://www.youtube.com/embed/Ejkb_YpuHWs?autoplay=1&loop=1&mute=1"
-                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-                    </iframe>
-                    <figcaption>Curso em vídeo com Gustavo Guanabara</figcaption>
-                </figure>
-            </div>
-        </section>
+  <!-- Skills -->
+  <section id="skills" class="container my-5">
+    <h3 class="text-center mb-4"><b>Skills</b> <span class="badge bg-success">Aprendizado</span></h3>
+    <ol class="list-group list-group-numbered">
+      <li class="list-group-item">HTML</li>
+      <li class="list-group-item">CSS</li>
+      <li class="list-group-item">JavaScript</li>
+      <li class="list-group-item">PHP</li>
+      <li class="list-group-item">Python</li>
+      <li class="list-group-item">Java</li>
+      <li class="list-group-item">SQL</li>
+    </ol>
 
-        <!-- Seção de background -->
-        <section id="background">
-            <h3 style="text-align: center; margin-top: 20px; margin-bottom: 20px;"><b>Meu background</b></h3>
-            <table style="margin: 0 auto; text-align: center;">
-                <tr>
-                    <th>Experiência Profissional</th>
-                    <th>Formação Acadêmica</th>
-                </tr>
-                <tr>
-                    <td style="padding: 20px;">Estágio curricular de Desenvolvimento Web(front-end) - Empresa CaseOf Creative</td>
-                    <td style="padding: 20px;">CTeSP Desenvolvimento Web e Dispositivos Móveis - ISLA Gaia</td>
-                </tr>
-            </table>
-        </section>
+    <div class="text-center mt-4">
+      <a href="https://github.com/IvanSantos1989" target="_blank" class="btn btn-dark">GitHub</a>
+      <a href="https://www.linkedin.com/in/ivanildo-santos-4a566b210" target="_blank" class="btn btn-primary ms-2">LinkedIn</a>
+    </div>
 
-        <!-- Seção de contato -->
-        <section id="contato"><br>
-            <h3 style="text-align: center; margin-top: 20px; margin-bottom: 20px;"><b>Entre em contato comigo</b></h3>
-            <form action="processa.php" method="post">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" required><br><br>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone" required><br><br>
-                <label for="mensagem">Mensagem</label><br>
-                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-    </main>
+    <figure class="text-center mt-4">
+      <iframe width="400" height="300" src="https://www.youtube.com/embed/Ejkb_YpuHWs?autoplay=1&loop=1&mute=1"
+              frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <figcaption>Curso em vídeo com Gustavo Guanabara</figcaption>
+    </figure>
+  </section>
 
-    <!-- Rodapé -->
-    <footer style="text-align: center; margin: 0 auto;">
-        <p>© 2025 IVAN DEV. Todos os direitos reservados.</p>
-    </footer>
+  <!-- Background -->
+  <section id="background" class="container my-5">
+    <h3 class="text-center mb-4"><b>Meu background</b></h3>
+    <div class="row text-center">
+      <div class="col-md-6">
+        <h5>Experiência Profissional</h5>
+        <p>Estágio curricular de Desenvolvimento Web (front-end) - Empresa CaseOf Creative</p>
+      </div>
+      <div class="col-md-6">
+        <h5>Formação Acadêmica</h5>
+        <p>CTeSP Desenvolvimento Web e Dispositivos Móveis - ISLA Gaia</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="container my-5">
+    <h3 class="text-center mb-4">Meus Projetos</h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Card Projeto 1 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="midias/remote-web-dev.jpg" class="card-img-top" alt="Projeto 1">
+          <div class="card-body">
+            <h5 class="card-title">Portfólio Pessoal</h5>
+            <span class="badge bg-primary">HTML</span>
+            <span class="badge bg-info text-dark">CSS</span>
+            <p class="card-text mt-2">Site responsivo feito como projeto final da disciplina.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProjeto1">Ver mais</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Projeto 2 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="midias/workspace dev.webp" class="card-img-top" alt="Projeto 2">
+          <div class="card-body">
+            <h5 class="card-title">Sistema de Tarefas</h5>
+            <span class="badge bg-secondary">PHP</span>
+            <span class="badge bg-warning text-dark">MySQL</span>
+            <p class="card-text mt-2">Aplicação CRUD realizada em grupo na disciplina de back-end.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProjeto2">Ver mais</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Projeto 3 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="midias/oculos dev.jpeg" class="card-img-top" alt="Projeto 3">
+          <div class="card-body">
+            <h5 class="card-title">Landing Page</h5>
+            <span class="badge bg-success">Bootstrap</span>
+            <span class="badge bg-dark">JS</span>
+            <p class="card-text mt-2">Landing page otimizada criada durante o estágio.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProjeto3">Ver mais</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carrossel -->
+  <section id="destaques" class="container my-5">
+    <h3 class="text-center mb-4">Destaques</h3>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="midias/ivandev.png" class="d-block mx-auto w-75" alt="Slide 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Desenvolvedor em formação</h5>
+            <p>Buscando transformar conhecimento em soluções reais.</p>
+          </div>         
+        </div>
+
+        <div class="carousel-item">
+          <img src="midias/webapp.png" class="d-block mx-auto w-75" alt="Slide 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Projeto de Estudo</h5>
+            <p>Landing page criada como parte do curso de Desenvolvimento Web.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="midias/design-responsivo.png" class="d-block mx-auto w-75" alt="Slide 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Foco no futuro</h5>
+            <p>O aprendizado de hoje é a base da minha carreira em tecnologia.</p>
+          </div>
+        </div>
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="container my-5">
+    <h3 class="text-center mb-4"><b>Entre em contato comigo</b></h3>
+    <form action="processa.php" method="post" class="bg-light p-4 rounded shadow">
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" id="nome" name="nome" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" name="email" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="telefone" class="form-label">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="mensagem" class="form-label">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="4" class="form-control" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Enviar</button>
+    </form>
+
+    <!-- Alert de envio fictício -->
+    <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+      Obrigado pelo contato! Em breve entrarei em contato. 🚀
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="text-center py-4 bg-dark text-white mt-5">
+    <p>© 2025 IVAN DEV. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Modals -->
+  <div class="modal fade" id="modalProjeto1" tabindex="-1" aria-labelledby="modalProjeto1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalProjeto1Label">Portfólio Pessoal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Site criado como trabalho acadêmico de front-end com foco em HTML5 e CSS3.</p>
+          <img src="midias/remote-web-dev.jpg" class="img-fluid" alt="Detalhes do Projeto 1">
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/IvanSantos1989" target="_blank" class="btn btn-outline-dark">Ver no GitHub</a>
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Projeto 2 -->
+<div class="modal fade" id="modalProjeto2" tabindex="-1" aria-labelledby="modalProjeto2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalProjeto2Label">Sistema de Tarefas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Aplicação web que permite criar, editar, excluir e listar tarefas. Desenvolvido com PHP, MySQL e Bootstrap como parte de projeto prático em aula.</p>
+          <img src="midias/workspace dev.webp" class="img-fluid" alt="Detalhes do Projeto 2">
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/IvanSantos1989" target="_blank" class="btn btn-outline-dark">Ver no GitHub</a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal Projeto 3 -->
+  <div class="modal fade" id="modalProjeto3" tabindex="-1" aria-labelledby="modalProjeto3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalProjeto3Label">Landing Page</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Landing page com design responsivo criada durante meu estágio. Utiliza Bootstrap para layout e componentes visuais modernos.</p>
+          <img src="midias/oculos dev.jpeg" class="img-fluid" alt="Detalhes do Projeto 3">
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/IvanSantos1989" target="_blank" class="btn btn-outline-dark">Ver no GitHub</a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
