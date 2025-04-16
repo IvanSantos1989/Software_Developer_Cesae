@@ -1,153 +1,199 @@
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body base */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #e4e0e0;
-    color: #333;
-    padding-top: 70px; /* espaço para navbar fixa */
-  }
-  
-  /* Navbar personalizada */
-  .navbar {
-    background: linear-gradient(to right, #1e3c72, #2a5298);
-  }
-  
-  .navbar-brand {
-    font-weight: bold;
-  }
-  
-  /* Cabeçalho */
-  header {
-    background: linear-gradient(to right, #1e3c72, #2a5298);
-    color: white;
-    padding: 40px 20px;
-    border-radius: 5px;
-  }
-  
-  #ivandev {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  
-  /* Botão com gradiente */
-  .btn-gradient {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 20px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-  }
-  
-  .btn-gradient:hover {
-    background: linear-gradient(to right, #4facfe, #00f2fe);
-    transform: scale(1.05);
-  }
-  
-  /* Cards personalizados */
-  .card {
-    border: none;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* Lista de skills com estilo */
-  .list-group-item {
-    background: linear-gradient(to right, #1e3c72, #2a5298);
-    color: white;
-    font-weight: bold;
-    border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s;
-  }
-  
-  .list-group-item:hover {
-    background: linear-gradient(to right, #4facfe, #00f2fe);
-    transform: scale(1.03);
-  }
-  
-  /* Formulário personalizado */
-  form.bg-light {
-    background: linear-gradient(to right, #1e3c72, #2a5298);
-    color: white;
-    border-radius: 15px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  form label {
-    color: white;
-    font-weight: bold;
-  }
-  
-  form .form-control {
-    border-radius: 8px;
-    background-color: #f4f4f4;
-    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Seções */
-  section {
-    margin-top: 40px;
-  }
-  
-  /* Carrossel */
-  .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-    padding: 10px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* Personalizar as setas do carrossel */
+/* Body base */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e4e0e0; /* Fundo claro */
+  color: #333; /* Texto escuro */
+  padding-top: 70px; /* Espaço para navbar fixa */
+}
+
+/* Tema Dark */
+body.dark-theme {
+  background-color: #121212; /* Fundo escuro */
+  color: #f4f4f4; /* Texto claro */
+}
+
+body.dark-theme .navbar,
+body.dark-theme header {
+  background: linear-gradient(to right, #333, #555); /* Gradiente escuro */
+}
+
+body.dark-theme .list-group-item {
+  background: linear-gradient(to right, #444, #666);
+  color: #f4f4f4;
+}
+
+body.dark-theme .btn {
+  background-color: #444;
+  color: #f4f4f4;
+}
+
+body.dark-theme .btn:hover {
+  background-color: #555;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+/* Cabeçalho */
+header {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+  padding: 40px 20px;
+  border-radius: 5px;
+}
+
+#ivandev {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Botões */
+.btn-gradient {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  transform: scale(1.05);
+}
+
+/* Lista de skills */
+.list-group-item {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+
+.list-group-item:hover {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  transform: scale(1.03);
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Formulário */
+form.bg-light {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+  color: white;
+  font-weight: bold;
+}
+
+form .form-control {
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form .form-control:focus {
+  border-color: #4facfe; /* Azul claro */
+  box-shadow: 0 0 5px rgba(79, 172, 254, 0.5); /* Sombra azul */
+  outline: none; /* Remove o contorno padrão */
+}
+
+/* Carrossel */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 10px;
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #1e3c72; /* Azul escuro que combina com o site */
-    border-radius: 50%; /* Deixa as setas com bordas arredondadas */
-    width: 40px;
-    height: 40px;
+  background-color: #1e3c72; /* Azul escuro que combina com o site */
+  border-radius: 50%; /* Deixa as setas com bordas arredondadas */
+  width: 40px;
+  height: 40px;
 }
 
-/* Adiciona um efeito de hover às setas */
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
-    background-color: #2a5298; /* Azul mais claro ao passar o mouse */
+  background-color: #2a5298; /* Azul mais claro ao passar o mouse */
 }
 
-/* Estilo para as imagens do carrossel */
 .carousel-inner img {
-    width: 100%; /* Faz as imagens ocuparem toda a largura do contêiner */
-    height: 400px; /* Define uma altura fixa para todas as imagens */
-    object-fit: cover; /* Garante que as imagens sejam cortadas proporcionalmente para preencher o espaço */
+  width: 100%; /* Faz as imagens ocuparem toda a largura do contêiner */
+  height: 400px; /* Define uma altura fixa para todas as imagens */
+  object-fit: cover; /* Garante que as imagens sejam cortadas proporcionalmente para preencher o espaço */
+  transition: transform 0.3s ease; /* Adiciona transição suave */
 }
-  
-  /* Responsivo */
-  @media (max-width: 768px) {
-    #animedev {
-      width: 100%;
-      max-width: 300px;
-      margin: 20px auto;
-      display: block;
-    }
-  
-    figure iframe {
-      width: 100%;
-      height: auto;
-    }
-  
-    figure figcaption {
-      text-align: center;
-      font-size: 14px;
-      color: #555;
-    }
-  }  
+
+.carousel-inner img:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Seções */
+section {
+  margin-top: 40px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  #animedev {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+  }
+
+  figure iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  figure figcaption {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+  }
+
+  header {
+    padding: 20px; /* Reduz o espaçamento interno no cabeçalho */
+    font-size: 1.2rem; /* Ajusta o tamanho do texto */
+  }
+
+  .carousel-inner img {
+    height: auto; /* Permite que as imagens se ajustem automaticamente */
+  }
+
+  .navbar {
+    padding: 10px; /* Reduz o espaçamento da navbar */
+  }
+}

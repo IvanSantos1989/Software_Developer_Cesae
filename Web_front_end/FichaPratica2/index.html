@@ -27,6 +27,8 @@
           <li class="nav-item"><a class="nav-link" href="#destaques">Destaques</a></li>
           <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
         </ul>
+        <!-- Botão de alternar tema -->
+        <button id="themeToggle" class="btn btn-secondary ms-3">🌙 Dark</button>
       </div>
     </div>
   </nav>
@@ -190,11 +192,11 @@
       <button type="submit" class="btn btn-success">Enviar</button>
     </form>
 
-    <!-- Alert de envio fictício -->
+    <!-- Alert de envio fictício
     <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
       Obrigado pelo contato! Em breve entrarei em contato. 🚀
       <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-    </div>
+    </div> -->
   </section>
 
   <!-- Rodapé -->
@@ -260,9 +262,30 @@
         </div>
       </div>
     </div>
-  </div>  
+  </div>
+
+
+  <!-- Modal de agradecimento -->
+<div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="thankYouModalLabel">Obrigado pelo contato!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p>Em breve entrarei em contato. 🚀</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="scripts.js"></script>
 </body>
 </html>
