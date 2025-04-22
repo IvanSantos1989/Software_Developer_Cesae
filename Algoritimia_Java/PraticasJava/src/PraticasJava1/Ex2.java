@@ -10,7 +10,7 @@ public class Ex2 {
         Scanner input = new Scanner(System.in);
 
         //variaveis
-        int num1, num2, subtracao, divisao, multiplicacao;
+        int num1, num2, soma, subtracao, divisao, multiplicacao;
 
         //ler num1
         System.out.print("Digite o número 1: ");
@@ -21,7 +21,7 @@ public class Ex2 {
         num2 = input.nextInt();
 
         //calculos
-        int soma = num1 + num2;
+         soma = num1 + num2;
          divisao = num1 / num2;
          subtracao = num1 - num2;
          multiplicacao = num1 * num2;
@@ -32,6 +32,5 @@ public class Ex2 {
         System.out.println("Subtração: " + subtracao);
         System.out.println("Multiplicação: " + multiplicacao);
 
-        input.close();
     }
 }
