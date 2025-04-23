@@ -9,7 +9,7 @@ public class Ex7 {
         Scanner input = new Scanner(System.in);
 
         // Declarar variáveis
-        Double preco1, preco2, preco3, totalNormal, totalDesconto;
+        double preco1, preco2, preco3, totalNormal, totalDesconto;
 
         // Ler valores
         System.out.print("Insira o preço1: ");
