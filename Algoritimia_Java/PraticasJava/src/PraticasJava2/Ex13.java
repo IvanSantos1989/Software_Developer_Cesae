@@ -4,33 +4,30 @@ import java.util.Scanner;
 
 public class Ex13 {
     public static void main(String[] args) {
+
+        // Criação do Scanner - Vamos ler inputs do utilizador
         Scanner input = new Scanner(System.in);
 
+        // Declarar as variáveis
         int horas, minutos;
-        String periodo;
 
-        System.out.print("Introduza horas: ");
+        // Ler horas e minutos - formato 24h
+        System.out.print("Insira as horas (0 - 24): ");
         horas = input.nextInt();
 
-        System.out.print("Introduza minutos: ");
+        System.out.println("Insira os minutos (0 - 59): ");
         minutos = input.nextInt();
 
-        // Define AM ou PM
-        if (horas < 12) {
-            periodo = "AM";
+        // Converter para formato 12
+
+        if (horas <= 12) {
+            // Manhã
+            System.out.println(horas + ":" + minutos + " AM");
         } else {
-            periodo = "PM";
-        }
-
-        // Converte para formato 12h
-        if (horas == 0) {
-            horas = 12;
-        } else if (horas > 12) {
+            // Tarde
             horas = horas - 12;
+            System.out.println(horas + ":" + minutos + " PM");
         }
-
-        // Mostra o resultado
-        System.out.println(horas + ":" + minutos + " " + periodo);
 
     }
 }
