@@ -5,23 +5,26 @@ import java.util.Scanner;
 public class Ex8 {
     public static void main(String[] args) {
 
+        // Criação do Scanner - Vamos ler inputs do utilizador
         Scanner input = new Scanner(System.in);
 
-        int numero, back, ahead;
+        // Declarar as variáveis
+        int numero, antecessor, sucessor;
 
-        System.out.print("Digite um número: ");
+        // Ler numero
+        System.out.print("Insira um número: ");
         numero = input.nextInt();
 
-        back = numero - 5;
-        ahead = numero + 5;
+        antecessor = numero - 5;
+        sucessor = numero + 5;
 
-        int contador = back;
-
-        while (contador <= ahead) {
-            if (contador != numero) {
-                System.out.print(contador + " ");
+        while (antecessor <= sucessor) {
+            if (antecessor != numero) {
+                System.out.println(antecessor);
             }
-            contador = contador + 1;
+
+            antecessor++;
         }
+
     }
 }

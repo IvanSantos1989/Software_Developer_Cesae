@@ -5,24 +5,25 @@ import java.util.Scanner;
 public class Ex13 {
     public static void main(String[] args) {
 
+        // Criação do Scanner - Vamos ler inputs do utilizador
         Scanner input = new Scanner(System.in);
 
-        int inicio, fim, intervalo;
+        // Declarar as variáveis
+        int inicio, limite;
 
-        System.out.print("primeiro número: ");
+        // Ler valores
+        System.out.print("Início do intervalo: ");
         inicio = input.nextInt();
 
-        System.out.print("último número: ");
-        fim = input.nextInt();
+        System.out.print("Limite do intervalo: ");
+        limite = input.nextInt();
 
-        System.out.println("Números múltiplos de 5 no intervalo:");
-        intervalo = inicio;
-
-        while (intervalo <= fim) {
-            if (intervalo %5 ==0){
-                System.out.println(intervalo);
+        while (inicio <= limite) {
+            if (inicio % 5 == 0) {
+                System.out.println(inicio);
             }
-            intervalo += 1;
+
+            inicio += 1;
         }
     }
 }
