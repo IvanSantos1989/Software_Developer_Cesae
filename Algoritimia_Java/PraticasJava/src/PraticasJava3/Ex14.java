@@ -31,6 +31,7 @@ public class Ex14 {
 
             numAnterior = numAtual;
 
+
             contador++;
         }
 
