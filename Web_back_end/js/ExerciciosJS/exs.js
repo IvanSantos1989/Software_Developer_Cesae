@@ -1,71 +1,103 @@
-let myLuckyNumber = 2025;
-let myName = "Ivan";
-alert(myName + " " + myLuckyNumber);
-console.log("O meu nome é " + myName + " e meu número da sorte é " + myLuckyNumber);
+//ex 17
+let myLuckyNumber = 16;
+let myName = 'Sara';
 
-console.log(`O meu nome é ${myName} e meu número da sorte é ${myLuckyNumber}`);
 
-const MESSAGE = " TASTE THE RAINBOW! ";
+//sintaxe tradicional 
+console.log("o meu nome é "+myName+ " e o meu número preferido é "+myLuckyNumber);
 
-console.log(MESSAGE);
+//sintaxe simplificada 
+console.log(`o meu nome é ${myName} e o meu número preferido ${myLuckyNumber}`);
 
+
+//ex pp 28
+const MESSAGE = " TASTE THE RAINBOW ";
+console.log(MESSAGE)
 let whisper = MESSAGE.toLowerCase().trim();
-console.log(whisper);
+console.log(whisper)
 
+//pp30
 const WORD = "skateboard";
-let facialHair = WORD.slice(5).replace("o", "e");
+let facialHair = WORD.slice(5).replace("o", "e")
 console.log(facialHair);
 
-let nome = prompt("Qual é o seu primeiro nome?");
-let sobrenome = prompt("Qual é o seu último nome?");
-alert(`Olá ${nome} ${sobrenome}, seja bem-vindo(a) ao nosso site!`);
+let myVar;
 
-//validação dia da semana e senha
-let diaSemana = prompt("Qual é o dia da semana?").toLowerCase().trim();
+console.log(myVar)
 
-if (diaSemana == "sexta") {
-    alert("yay, sobrevivemos a mais uma semana!");
+//ex pp 35
+// let myFirstVar = prompt('Qual é o teu primeiro nome?');
+// let surname = prompt('Qual é o teu primeiro apelido?');
 
-} else if (["segunda", "terça", "quarta", "quinta", "sábado", "domingo"].includes(diaSemana)) {
-    alert("Mais um dia normal de trabalho!");
+// alert(`Olá ${myFirstVar} ${surname}`);
+// console.log(`Olá ${myFirstVar} ${surname}`);
 
-} else {
-    alert("Dia inválido! Tente novamente.");
+//ex pp 39
+// let userWeekDay = prompt('que dia da semana é?');
+
+// if(userWeekDay.toLowerCase().trim() == 'sexta'){
+//     console.log('yay, sobrevivemos a mais uma semana');
+// }else{
+//     console.log('força nisso');
+// }
+
+// let userPass = prompt('Qual é a sua pass?');
+
+// if(userPass.length < 6){
+//     console.log('a pass tem que ter pelo menos 6 caracteres');
+// }else{
+//     console.log('pass ok');
+// }
+
+//pp 43
+// let planets = ['Mercúrio', 'Vénus', 'Terra', 'Mart', 'Jupiter', 'Saturno', 'Urano', 'Neptuno', 'Plutão'];
+// let oldPlanets = planets;
+// planets[3] = 'Marte';
+// planets.pop();
+// planets.unshift('novoPlaneta');
+// console.log(planets)
+
+//pp 55
+// for(let i =0; i<6; i++){
+//     console.log(i+ ' Da ba dee da ba daa');
+// }
+
+// for(let i = 25 ; i>=5 ; i-=5){
+//     console.log(i);
+// }
+
+
+// const people = ["Scooby", "Velma", "Fred", "Daphne", "Shaggy", "Fred"];
+// for (let p = 0; p < people.length; p++) {
+//     console.log(people[p].toUpperCase());
+// }
+
+
+let listaCompras = [];
+let codigo = "fim";
+
+while (true) {
+    let itemLista = prompt("Digite um produto para adicionar ou 'apagar' para remover um item (ou 'fim' para sair):").toLowerCase();
+
+    if (itemLista === codigo) break;
+
+    if (itemLista === "apagar") {
+        if (listaCompras.length === 0) {
+            alert("A lista está vazia. Nada para apagar!");
+        } else {
+            let itemParaApagar = prompt("Digite o nome do item que deseja apagar:");
+            let index = listaCompras.indexOf(itemParaApagar);
+
+            if (index !== -1) {
+                listaCompras.splice(index, 1);
+                alert(`O item "${itemParaApagar}" foi removido. Lista atualizada!`);
+            } else {
+                alert(`O item "${itemParaApagar}" não foi encontrado na lista.`);
+            }
+        }
+    } else {
+        listaCompras.push(itemLista);
+    }
 }
 
-let senha = prompt("Digite a senha de 6 caracteres: ");
-
-if (senha.length >= 6) {
-    alert("Senha válida!");
-
-}else {
-    alert("Senha inválida! Tente novamente.");
-}
-
-// swich case
-let diaSemanaV2 = prompt("Qual é o dia da semana?");
-switch (diaSemanaV2) {
-    case "segunda":
-        alert("Mais um dia normal de trabalho!");
-        break;
-    case "terça":
-        alert("Mais um dia normal de trabalho!");
-        break;
-    case "quarta":
-        alert("Mais um dia normal de trabalho!");
-        break;
-    case "quinta":
-        alert("Mais um dia normal de trabalho!");
-        break;
-    case "sexta":
-        alert("yay, sobrevivemos a mais uma semana!");
-        break;
-    case "sábado":
-        alert("Mais um dia normal de trabalho!");
-        break;
-    case "domingo":
-        alert("Mais um dia normal de trabalho!");
-        break;
-    default:
-        alert("Dia inválido! Tente novamente.");
-}
+console.log(listaCompras);
