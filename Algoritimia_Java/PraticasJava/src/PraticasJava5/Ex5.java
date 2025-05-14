@@ -4,10 +4,13 @@ import java.util.Scanner;
 
 public class Ex5 {
     public static void main(String[] args) {
+
+        // Import do Scanner
         Scanner input = new Scanner(System.in);
 
         // Declarar variáveis
-        int[] vetor = new int[6];
+        int[] vetor = new int[5];
+        int somaElementos = 0, media;
 
         // Ler vetor
         for (int i = 0; i < vetor.length; i++) {
@@ -15,13 +18,14 @@ public class Ex5 {
             vetor[i] = input.nextInt();
         }
 
-       // calcular media do vetor
-        int soma = 0;
+        // Calcular a soma dos elementos
         for (int i = 0; i < vetor.length; i++) {
-            soma += vetor[i];
+            somaElementos = somaElementos + vetor[i];
         }
-        double media = soma / vetor.length;
-        System.out.println("A média é: " + media);
+
+        media = somaElementos / vetor.length;
+
+        System.out.println("Média: " + media);
 
     }
 }

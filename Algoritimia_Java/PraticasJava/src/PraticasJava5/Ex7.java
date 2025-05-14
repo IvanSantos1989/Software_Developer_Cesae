@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class Ex7 {
     public static void main(String[] args) {
+
+        // Import do Scanner
         Scanner input = new Scanner(System.in);
 
         // Declarar variáveis
         int[] vetor = new int[5];
-        int maiorpar = vetor[0];
-        boolean encontroupar = false;
 
         // Ler vetor
         for (int i = 0; i < vetor.length; i++) {
@@ -17,20 +17,28 @@ public class Ex7 {
             vetor[i] = input.nextInt();
         }
 
-        // Verificar maior par
+        int maiorElemento = -1;
+
         for (int i = 0; i < vetor.length; i++) {
-            if (vetor[i] % 2 == 0) { // Verifica se o número é par
-                if ( vetor[i] > maiorpar) { // Verifica se é o maior par
-                    maiorpar = vetor[i];
-                    encontroupar = true; // Marca que encontrou um par maior
+            if (vetor[i] % 2 == 0) {
+
+                if (maiorElemento % 2 != 0) {
+                    maiorElemento = vetor[i];
                 }
+
+                if (vetor[i] > maiorElemento) {
+                    maiorElemento = vetor[i];
+                }
+
             }
         }
 
-        if (encontroupar) { // Se encontrou um par maior
-            System.out.println("O maior par é: " + maiorpar);
+        if (maiorElemento % 2 == 0) {
+            System.out.println("Maior Par: " + maiorElemento);
         } else {
-            System.out.println("Não há números pares no vetor."); // caso não tenha nenhum par no vetor
+            System.out.println("Não há pares");
+        }
+
+
     }
-}
 }
