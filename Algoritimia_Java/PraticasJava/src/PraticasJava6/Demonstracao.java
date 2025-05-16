@@ -2,7 +2,7 @@ package PraticasJava6;
 
 import java.util.Scanner;
 
-import static Bibliotecas.Matematica.modulo_diferenca_inteira;
+
 
 public class Demonstracao {
     public static void main(String[] args) {
@@ -23,10 +23,10 @@ public class Demonstracao {
         double x=Math.PI;
 
         // Invocar a função
-        res = modulo_diferenca_inteira (num1, num2);
+        res = num1;
         System.out.println("Módulo Dif. Int.: " + res);
 
-        res2 = modulo_diferenca_inteira (num1, 50);
+        res2 = num2;
         System.out.println("Módulo Dif. Int.: " + res2);
     }
 }
