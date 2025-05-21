@@ -5,31 +5,30 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Ex6 {
-    public static void idadeMaior (String caminhoFicheiro) throws FileNotFoundException {
+    public static void pessoaMaisVelha(String caminho) throws FileNotFoundException {
 
-        File ficheiro = new File(caminhoFicheiro);
-        Scanner reader = new Scanner(ficheiro);
+        File ficheiro = new File(caminho);
+        Scanner sc = new Scanner(ficheiro);
 
-        int maiorIdade = 0;
-        String nomeMaiorIdade = "";
+        int idadeMaisVelha = 0;
+        String nomeMaisVelha = "";
 
-        // achar a maior idade
-        while (reader.hasNextLine()) {
-            String linha = reader.nextLine();
-            String[] partes = linha.split(",");
-            String nome = partes[0];
-            int idade = Integer.parseInt(partes[1]);
+        while (sc.hasNextLine()) {
+            String linha = sc.nextLine();
+            String[] linhaSeparada = linha.split(",");
 
-            if (idade > maiorIdade) {
-                maiorIdade = idade;
-                nomeMaiorIdade = nome;
+            if (Integer.parseInt(linhaSeparada[1]) > idadeMaisVelha) {
+                idadeMaisVelha = Integer.parseInt(linhaSeparada[1]);
+                nomeMaisVelha = linhaSeparada[0];
             }
         }
-        System.out.println("Pessoa mais velha: " + nomeMaiorIdade + " com " + maiorIdade + " anos.");
+
+        System.out.println("_____ Pessoa Mais Velha _____");
+        System.out.println(nomeMaisVelha + " com " + idadeMaisVelha + " anos!");
     }
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        idadeMaior("Ficheiros/exercicio_06.txt");
+        pessoaMaisVelha("Ficheiros/exercicio_06.txt");
     }
 }

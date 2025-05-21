@@ -1,18 +1,17 @@
 package PraticasJava7;
 
+import javax.imageio.stream.ImageInputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Ex7 {
-    public static void contarLinhasePalavras(String caminhoFicheiro) throws FileNotFoundException {
+    //public static void contarLinhasePalavras(String caminhoFicheiro) throws FileNotFoundException {
 
         /**
          * Função que conta o número de linhas e palavras de um ficheiro
-         * @param caminhoFicheiro Caminho do ficheiro
-         * @throws FileNotFoundException Caso o ficheiro não exista
          */
-        File ficheiro = new File(caminhoFicheiro);
+        /*File ficheiro = new File(caminhoFicheiro);
         Scanner reader = new Scanner(ficheiro);
 
         int numLinhas = 0;
@@ -31,5 +30,46 @@ public class Ex7 {
 
     public static void main(String[] args) throws FileNotFoundException {
         contarLinhasePalavras("Ficheiros/exercicio_07.txt");
+    }*/
+
+        public static int contarLinhas(String caminho) throws FileNotFoundException {
+
+            File ficheiro = new File(caminho);
+            Scanner sc = new Scanner(ficheiro);
+
+            int contagemLinhas = 0;
+
+            while (sc.hasNextLine()) {
+                sc.nextLine();
+                contagemLinhas++;
+            }
+
+            System.out.println("total de linhas: " + contagemLinhas);
+            return contagemLinhas;
+        }
+
+    public static int contarPalavras(String caminho) throws FileNotFoundException {
+
+        File ficheiro = new File(caminho);
+        Scanner sc = new Scanner(ficheiro);
+
+        int contagemPalavras = 0;
+
+        while (sc.hasNextLine()) {
+            String linha = sc.nextLine();
+            String[] linhaSeparada = linha.split(" ");
+
+            contagemPalavras += linhaSeparada.length;
+        }
+
+        System.out.println("total de palavras: " + contagemPalavras);
+        return contagemPalavras;
+    }
+
+    public static void main(String[] args) throws FileNotFoundException {
+
+        contarLinhas("Ficheiros/exercicio_07.txt");
+        contarPalavras("Ficheiros/exercicio_07.txt");
+
     }
 }
