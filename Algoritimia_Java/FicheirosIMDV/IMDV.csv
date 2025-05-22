@@ -1,0 +1,130 @@
+idFilme;tituloFilme;rating;duracao;ano;estudio;realizador;genero
+F00-001;Interstellar;8.7;169;2014;Legendary Pictures;Christopher Nolan;Sci-fi
+F00-002;The Hunger Games;7.2;142;2012;Lionsgate;Gary Ross;Acao
+F00-003;Inception;8.8;148;2010;Warner Bros;Christopher Nolan;Sci-fi
+F00-004;The Lord of the Rings: The Fellowship of the Ring;8.8;178;2001;New Line Cinema;Peter Jackson;Fantasia
+F00-005;The Shawshank Redemption;9.3;142;1994;Columbia Pictures;Frank Darabont;Drama
+F00-006;Avatar;7.8;162;2009;20th Century Fox;James Cameron;Acao
+F00-007;Batman: The Dark Knight;9.0;152;2008;Warner Bros;Christopher Nolan;Acao
+F00-008;Pulp Fiction;8.9;154;1994;Miramax Films;Quentin Tarantino;Crime
+F00-009;Forrest Gump;8.8;142;1994;Paramount Pictures;Robert Zemeckis;Drama
+F00-010;Jurassic Park;8.1;127;1993;Universal Pictures;Steven Spielberg;Aventura
+F00-011;The Matrix;8.7;136;1999;Warner Bros;The Wachowskis;Acao
+F00-012;E.T. the Extra-Terrestrial;7.8;115;1982;Universal Pictures;Steven Spielberg;Familia
+F00-013;The Godfather;9.2;175;1972;Paramount Pictures;Francis Ford Coppola;Crime
+F00-014;Titanic;7.8;195;1997;20th Century Fox;James Cameron;Romance
+F00-015;Gladiator;8.5;155;2000;DreamWorks;Ridley Scott;Acao
+F00-016;The Avengers;8.0;143;2012;Marvel Studios;Joss Whedon;Acao
+F00-017;The Revenant;8.0;156;2015;20th Century Fox;Alejandro Gonzalez Inarritu;Drama
+F00-018;Inglourious Basterds;8.3;153;2009;The Weinstein Company;Quentin Tarantino;Guerra
+F00-019;The Lion King;8.5;88;1994;Walt Disney Pictures;Roger Allers, Rob Minkoff;Animacao
+F00-020;The Silence of the Lambs;8.6;118;1991;Orion Pictures;Jonathan Demme;Crime
+F00-021;The Lord of the Rings: The Two Towers;8.7;179;2002;New Line Cinema;Peter Jackson;Fantasia
+F00-022;Oppenheimer;8.6;180;2023;Syncopy Inc.;Christopher Nolan;Drama
+F00-023;The Lord of the Rings: The Return of the King;8.9;201;2003;New Line Cinema;Peter Jackson;Fantasia
+F00-024;The Green Mile;8.6;189;1999;Warner Bros;Frank Darabont;Drama
+F00-025;The Godfather: Part II;9.0;202;1974;Paramount Pictures;Francis Ford Coppola;Crime
+F00-026;Schindler's List;8.9;195;1993;Universal Pictures;Steven Spielberg;Biografia
+F00-027;The Departed;8.5;151;2006;Warner Bros;Martin Scorsese;Crime
+F00-028;Sicario;7.7;121;2015;Black Label Media;Basil Iwanyk;Crime
+F00-029;Stand by Me;8.1;89;1986;Columbia Pictures;Rob Reiner;Drama
+F00-030;The Goonies;7.8;114;1985;Warner Bros;Richard Donner;Aventura
+F00-031;The Untouchables;7.9;119;1987;Paramount Pictures;Brian De Palma;Crime
+F00-032;Predator;7.8;107;1987;20th Century Fox;John McTiernan;Acao
+F00-033;The Karate Kid;7.3;126;1984;Columbia Pictures;John G. Avildsen;Drama
+F00-034;Beetlejuice;7.5;92;1988;Warner Bros;Tim Burton;Comedia
+F00-035;Platoon;8.1;120;1986;Orion Pictures;Oliver Stone;Guerra
+F00-036;The Lost Boys;7.3;97;1987;Warner Bros;Joel Schumacher;Terror
+F00-037;Rain Man;8.0;133;1988;United Artists;Barry Levinson;Drama
+F00-038;Big;7.3;104;1988;20th Century Fox;Penny Marshall;Comedia
+F00-039;RoboCop;7.6;102;1987;Orion Pictures;Paul Verhoeven;Acao
+F00-040;The Color Purple;7.8;154;1985;Warner Bros;Steven Spielberg;Drama
+F00-041;Beaches;6.8;123;1988;Touchstone Pictures;Garry Marshall;Drama
+F00-042;Who Framed Roger Rabbit;7.7;104;1988;Touchstone Pictures;Robert Zemeckis;Comedia
+F00-043;Escape from New York;7.2;99;1981;Avco Embassy Pictures;John Carpenter;Acao
+F00-044;The Dead Zone;7.2;103;1983;Paramount Pictures;David Cronenberg;Terror
+F00-045;The Killing Fields;8.2;141;1984;Warner Bros;Roland Joffe;Drama
+F00-046;First Blood;7.7;93;1982;Orion Pictures;Ted Kotcheff;Acao
+F00-047;The Elephant Man;8.1;124;1980;Paramount Pictures;David Lynch;Drama
+F00-048;Ordinary People;7.7;124;1980;Paramount Pictures;Robert Redford;Drama
+F00-049;48 Hrs.;6.9;96;1982;Paramount Pictures;Walter Hill;Acao
+F00-050;An American Werewolf in London;7.5;97;1981;Universal Pictures;John Landis;Terror
+F00-051;The Outsiders;7.1;91;1983;Warner Bros;Francis Ford Coppola;Drama
+F00-052;Caddyshack;7.3;98;1980;Orion Pictures;Harold Ramis;Comedia
+F00-053;Escape from Alcatraz;7.6;112;1979;Paramount Pictures;Don Siegel;Drama
+F00-054;The Fog;6.8;89;1980;AVCO Embassy Pictures;John Carpenter;Terror
+F00-055;The Great Santini;7.2;115;1979;Warner Bros;Lewis John Carlino;Drama
+F00-056;Superman II;6.7;127;1980;Warner Bros;Richard Lester;Aventura
+F00-057;Scarface;8.3;170;1983;Universal Pictures;Brian De Palma;Crime
+F00-058;Edge of Tomorrow;7.9;113;2014;Warner Bros;Doug Liman;Acao
+F00-059;Focus;6.6;104;2015;Warner Bros;Glenn Ficarra;Crime
+F00-060;The Gentlemen;7.8;113;2019;Miramax;Guy Ritchie;Crime
+F00-061;Oceans Eleven;7.7;116;2001;Warner Bros;Steven Soderbergh;Crime
+F00-062;Pocahontas;6.7;81;1995;Walt Disney Pictures;Mike Gabriel;Animacao
+F00-063;Ratatouille;8.0;111;2007;Pixar Animation Studios;Brad Bird;Animacao
+F00-064;Following;7.5;69;1998;Syncopy;Christopher Nolan;Crime
+F00-065;Memento;8.4;113;2000;Newmarket Films;Christopher Nolan;Crime
+F00-066;Batman: Begins;8.2;140;2005;Warner Bros;Christopher Nolan;Acao
+F00-067;The Prestige;8.5;130;2006;Warner Bros;Christopher Nolan;Drama
+F00-068;Dunkirk;7.8;106;2017;Syncopy;Christopher Nolan;Drama
+F00-069;Tenet;7.4;150;2020;Syncopy;Christopher Nolan;Acao
+F00-070;A Bela e o Monstro;8.0;84;1991;Walt Disney Pictures;Gary Trousdale;Animacao
+F00-071;A Pequena Sereia;7.6;83;1989;Walt Disney Pictures;Ron Clements;Animacao
+F00-072;Aladdin;8.0;90;1992;Walt Disney Pictures;Ron Clements;Animacao
+F00-073;Frozen - O Reino do Gelo;7.4;102;2013;Walt Disney Pictures;Chris Buck;Animacao
+F00-074;Toy Story;8.3;81;1995;Pixar Animation Studios;John Lasseter;Animacao
+F00-075;Mulan;7.6;88;1998;Walt Disney Pictures;Barry Cook;Animacao
+F00-076;King Arthur: Legend of the Sword;6.7;126;2017;Warner Bros;Guy Ritchie;Acao
+F00-077;Arrival;7.9;116;2016;FilmNation Entertainment;Denis Villeneuve;Sci-fi
+F00-078;Shrek;7.9;90;2001;DreamWorks;Andrew Adamson;Animacao
+F00-079;Shrek 2;7.3;93;2004;DreamWorks;Andrew Adamson;Animacao
+F00-080;Shrek - O Terceiro;6.1;93;2007;DreamWorks;Chris Miller;Animacao
+F00-081;The Maze Runner;6.8;117;2014;Temple Hill Entertainment;Wes Ball;Acao
+F00-082;Shutter Island;8.2;138;2010;Phoenix Pictures;Mike Medavoy;Thriller
+F00-083;Barbie;6.5;90;2022;Mattel Films;Jennifer Lee;Animacao
+F00-085;Mad Max: Road Fury;8.1;120;2015;Village Roadshow Pictures;George Miller;Acao
+F00-086;Mission Impossible;7.1;110;1996;Paramount Pictures;Brian De Palma;Acao
+F00-087;Mission Impossible 2;6.1;123;2000;Paramount Pictures;John Woo;Acao
+F00-088;Mission Impossible 3;6.9;126;2006;Paramount Pictures;J.J. Abrams;Acao
+F00-089;Mission Impossible: Protocolo Fantasma;7.4;132;2011;Paramount Pictures;Brad Bird;Acao
+F00-090;Mission Impossible: Nacao Secreta;7.4;131;2015;Paramount Pictures;Christopher McQuarrie;Acao
+F00-091;Spider-Man: Into the Spider-Verse;8.4;117;2018;Columbia Pictures;Peter Ramsey;Animacao
+F00-092;Fight Club;8.8;139;1999;Columbia Pictures;David Fincher;Drama
+F00-093;Men in Black;7.3;98;1997;Columbia Pictures;Barry Sonnenfeld;Acao
+F00-094;The Amazing Spider-Man;6.9;136;2012;Columbia Pictures;Marc Webb;Acao
+F00-095;Jumanji: Welcome to the Jungle;6.9;119;2017;Columbia Pictures;Jake Kasdan;Aventura
+F00-096;Dont Breathe;7.1;88;2016;Columbia Pictures;Fede Alvarez;Thriller
+F00-097;Spider-Man: Far From Home;7.5;129;2019;Columbia Pictures;Jon Watts;Acao
+F00-098;Zombieland;7.6;88;2009;Columbia Pictures;Ruben Fleischer;Comedia
+F00-099;Inferno;6.2;121;2016;Columbia Pictures;Ron Howard;Misterio
+F00-100;Salt;6.4;100;2010;Columbia Pictures;Phillip Noyce;Acao
+F00-101;Da Vinci Code;6.6;149;2006;Columbia Pictures;Ron Howard;Misterio
+F00-102;Angels and Demons;6.7;138;2009;Columbia Pictures;Ron Howard;Misterio
+F00-104;Harry Potter and the Sorcerers Stone;7.6;152;2001;Warner Bros;Chris Columbus;Fantasia
+F00-105;Harry Potter and the Prisoner of Azkaban;7.9;142;2004;Warner Bros;Alfonso Cuaron;Fantasia
+F00-106;Harry Potter and the Deathly Hallows - Part 2;8.1;130;2011;Warner Bros;David Yates;Fantasia
+F00-107;Harry Potter and the Chamber of Secrets;7.4;161;2002;Warner Bros;Chris Columbus;Fantasia
+F00-108;Harry Potter and the Goblet of Fire;7.7;157;2005;Warner Bros;Mike Newell;Fantasia
+F00-109;Harry Potter and the Half-Blood Prince;7.6;153;2009;Warner Bros;David Yates;Fantasia
+F00-110;Harry Potter and the Deathly Hallows - Part 1;7.7;146;2010;Warner Bros;David Yates;Fantasia
+F00-111;Harry Potter and the Order of the Phoenix;7.5;138;2007;Warner Bros;David Yates;Fantasia
+F00-112;Star Wars: Episode IV - A New Hope;8.6;121;1977;20th Century Fox;George Lucas;Aventura
+F00-113;Star Wars: Episode V - The Empire Strikes Back;8.7;124;1980;20th Century Fox;Irvin Kershner;Aventura
+F00-114;Star Wars: Episode VI - Return of the Jedi;8.3;131;1983;20th Century Fox;Richard Marquand;Aventura
+F00-115;Star Wars: Episode I - The Phantom Menace;6.5;136;1999;20th Century Fox;George Lucas;Aventura
+F00-116;Star Wars: Episode II - Attack of the Clones;6.5;142;2002;20th Century Fox;George Lucas;Aventura
+F00-117;Star Wars: Episode III - Revenge of the Sith;7.5;140;2005;20th Century Fox;George Lucas;Aventura
+F00-118;Star Wars: Episode VII - The Force Awakens;7.8;135;2015;Walt Disney Studios;J.J. Abrams;Aventura
+F00-119;Star Wars: Episode VIII - The Last Jedi;7.0;152;2017;Walt Disney Studios;Rian Johnson;Aventura
+F00-120;Star Wars: Episode IX - The Rise of Skywalker;6.5;142;2019;Walt Disney Studios;J.J. Abrams;Aventura
+F00-121;X-Men;7.4;104;2000;20th Century Fox;Bryan Singer;Sci-fi
+F00-122;X2: X-Men United;7.4;134;2003;20th Century Fox;Bryan Singer;Sci-fi
+F00-123;X-Men: The Last Stand;6.7;104;2006;20th Century Fox;Brett Ratner;Sci-fi
+F00-124;X-Men: First Class;7.7;131;2011;20th Century Fox;Matthew Vaughn;Sci-fi
+F00-125;The Wolverine;6.7;126;2013;20th Century Fox;James Mangold;Sci-fi
+F00-126;X-Men: Days of Future Past;8.0;131;2014;20th Century Fox;Bryan Singer;Sci-fi
+F00-127;Deadpool;8.0;108;2016;20th Century Fox;Tim Miller;Sci-fi
+F00-128;X-Men: Apocalypse;6.9;144;2016;20th Century Fox;Bryan Singer;Sci-fi
+F00-129;Logan;8.1;137;2017;20th Century Fox;James Mangold;Sci-fi
+F00-130;Deadpool 2;7.7;119;2018;20th Century Fox;David Leitch;Sci-fi
+F00-131;X-Men: Dark Phoenix;5.8;113;2019;20th Century Fox;Simon Kinberg;Sci-fi
