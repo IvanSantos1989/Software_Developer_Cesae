@@ -1,5 +1,8 @@
 package ProjetoIMDV;
 
+import Bibliotecas.FunctionsAdmin;
+import Bibliotecas.FunctionsClient;
+
 import java.util.Scanner;
 
 public class StartMenu {
@@ -18,13 +21,23 @@ public class StartMenu {
             System.out.println("__________________________________________");
 
             System.out.println();
-            System.out.print("Digite a opção desejada: ");
+            System.out.print("Qual o seu tipo de utilizador? ");
 
             opcao = input.nextInt();
 
             switch (opcao) {
                 case 1:
                     System.out.println("Você selecionou o MENU ADMIN.");
+                    Scanner inputAdmin = new Scanner(System.in);
+                    System.out.print("Qual o seu utilizador? ");
+                    String utilizador = inputAdmin.nextLine();
+                    System.out.print("Qual a sua password? ");
+                    String password = inputAdmin.nextLine();
+                    // Verifica se o utilizador e a password estão corretos baseando-se num ficheiro com array
+                    // de strings com os utilizadores e passwords
+                    String[][] utilizadores = FunctionsAdmin.lerFicheiroUtilizadores("FicheirosIMDV/IMDV_AdminLogin.csv");
+
+
 
                     break;
                 case 2:
