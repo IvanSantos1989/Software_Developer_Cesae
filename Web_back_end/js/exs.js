@@ -104,24 +104,25 @@
 // console.log(listaCompras);
 
 //pp47
-const airplaneSeats = [
-['Ruth', 'Anthony', 'Stevie'],
-['Amelia', 'Pedro', 'Maya'],
-['Xavier', 'Ananya', 'Luis'],
-['Luke', null, 'Deniz'],
-['Rin', 'Sakura', 'Francisco']
-];
+// const airplaneSeats = [
+// ['Ruth', 'Anthony', 'Stevie'],
+// ['Amelia', 'Pedro', 'Maya'],
+// ['Xavier', 'Ananya', 'Luis'],
+// ['Luke', null, 'Deniz'],
+// ['Rin', 'Sakura', 'Francisco']
+// ];
 
-airplaneSeats[3][1] = 'Ivan';
-console.log(airplaneSeats);
+// airplaneSeats[3][1] = 'Ivan';
+// console.log(airplaneSeats);
 
-let courseStructure = {
-    CourseName: 'Software Developer',
-    hours: 1000,
-    modules: ['js', 'algoritimia', 'mysql']
-}
+// let courseStructure = {
+//     CourseName: 'Software Developer',
+//     hours: 1000,
+//     modules: ['js', 'algoritimia', 'mysql']
+// }
 
-courseStructure.CourseName = 'AWS';
+// courseStructure.CourseName = 'AWS';
 
-console.log(courseStructure.modules[1]);
+// console.log(courseStructure.modules[1]);
+
 

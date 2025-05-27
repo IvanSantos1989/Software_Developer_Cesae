@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class FunctionsAdmin {
+    // aqui nessa função vamos imprimir o ficheiro de ratings
     public static void imprimirFicheiro(String path) throws FileNotFoundException {
 
         File ficheiro = new File(path);
@@ -16,7 +17,7 @@ public class FunctionsAdmin {
         }
     }
 
-
+    // função para contar o número de linhas do ficheiro de ratings, exceto a primeira linha (cabeçalho)
     public static int linhasRatings(String path) throws FileNotFoundException {
 
         File ficheiro = new File(path);
@@ -89,17 +90,5 @@ public class FunctionsAdmin {
                 }
             }
         }
-
-    }
-
-
-    public static String[][] lerFicheiroUtilizadores(String s) {
-        // ler o ficheiro e guardar os dados numa matriz
-
-        return new String[0][];
     }
 }
-
-
-
-

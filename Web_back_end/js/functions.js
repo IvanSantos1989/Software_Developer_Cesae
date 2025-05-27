@@ -40,3 +40,43 @@ function isSnakeEyes() {
         alert('Não são Snake Eyes!');
     }
 }
+
+
+//pp 86
+const fullNames = [{first: 'Albus', last: 'Dumbledore'}, {first: 'Harry', last: 'Potter'}, 
+{first: 'Hermione', last: 'Granger'}, {first: 'Ron', last: 'Weasley'}, {first: 'Rubeus', last: 
+'Hagrid'}, {first: 'Minerva', last: 'McGonagall'}, {first: 'Severus', last: 'Snape'}];
+
+//Crie um novo array chamado firstNames que nos retorne os primeiros Nomes do Array Original
+// function firstNames(){
+//     const fullNames = [
+//         {first: 'Albus', last: 'Dumbledore'}, 
+//         {first: 'Harry', last: 'Potter'}, 
+//         {first: 'Hermione', last: 'Granger'}, 
+//         {first: 'Ron', last: 'Weasley'}, 
+//         {first: 'Rubeus', last: 'Hagrid'}, 
+//         {first: 'Minerva', last: 'McGonagall'}, 
+//         {first: 'Severus', last: 'Snape'}
+//     ];
+
+//     const firstNames = fullNames.map(function(name) {
+//         return name.first;
+//     });
+//     console.log(firstNames);
+
+//     fullNames.forEach(function(name) {
+//         console.log(name.last);
+//     });
+// }
+
+// pp88
+//Usando as Arrow Functions, crie uma função chamada greet que receba um argumento que represente o nome de uma pessoa
+let heyname = prompt('Qual é o seu nome?');
+
+const greet = (heyname) => {
+    return `Olá, ${heyname}!`;
+}
+console.log(greet(heyname));
+
+//const greet = name => 'Olá, ' + name + '!';
+

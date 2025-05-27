@@ -25,19 +25,19 @@ public class AdminMenu {
             opcao = input.nextInt();
 
             switch (opcao) {
-                case 1:
+                case 1: // Imprime o ficheiro de ratings
                     System.out.println("Consultando ficheiro de ratings...");
                     System.out.println();
                     imprimirFicheiro("FicheirosIMDV/IMDV.csv");
                     break;
 
-                case 2:
+                case 2: // Verifica o total de ratings
                     System.out.println("Verificando o total de ratings...");
                     System.out.println();
                     linhasRatings("FicheirosIMDV/IMDV.csv");
                     break;
 
-                case 3:
+                case 3: // Lista todos os estúdios avaliados
                     System.out.println("Verificando todos os estúdios avaliados...");
                     System.out.println();
                     listarEstudios("FicheirosIMDV/IMDV.csv");
@@ -46,7 +46,7 @@ public class AdminMenu {
                     System.out.println("Voltando ao menu principal...");
                     break;
                 default:
-                    System.out.println("Opção inválida! Selecione 1, 2, 3, 4 ou 5.");
+                    System.out.println("Opção inválida! Selecione 1, 2, 3 ou 4.");
                     break;
             }
         } while (opcao != 4);

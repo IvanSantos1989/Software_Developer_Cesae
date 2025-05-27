@@ -31,10 +31,9 @@ public class StartMenu {
             opcao = input.nextInt();
 
             switch (opcao) {
-                case 1:
+                case 1: // entra no menu admin e pede o nome de utilizador e a password
                     System.out.println("Você selecionou o MENU ADMIN.");
 
-                    // Pedir ao utilizador o nome de utilizador e a password apenas uma vez
                     Scanner inputAdmin = new Scanner(System.in);
                     System.out.print("Digite o seu nome de utilizador: ");
                     String username = inputAdmin.nextLine();
@@ -66,23 +65,33 @@ public class StartMenu {
                     } else {
                         System.out.println("Nome de utilizador ou password incorretos. Tente novamente.");
                     }
-
                     break;
 
 
+                case 2: // entra no menu cliente
+                    System.out.println("Você selecionou o MENU CLIENTE.");
+                    ClientMenu.printClientMenu();
+                    break;
 
-                case 2:
-                            System.out.println("Você selecionou o MENU CLIENTE.");
-                            ClientMenu.printClientMenu();
-                            break;
-                        case 3:
+                    case 3:
                             System.out.println("Saindo da plataforma IMDV...");
+                            // Assim que o utilizador encerre o programa, impreme o meu Copyright.
+
+                            File copyrightFile = new File("FicheirosIMDV/IMDV_Copyright.txt");
+                            Scanner copyrightReader = new Scanner(copyrightFile);
+                            System.out.println("\n_*_*_*_*_*_*_*_*_*_*_*_*_*_ Copyright IMDV _*_*_*_*_*_*_*_*_*_*_*_*_*_");
+
+                            while (copyrightReader.hasNextLine()) {
+                                String line = copyrightReader.nextLine();
+                                System.out.println(line);
+                            }
                             break;
+
                         default:
                             System.out.println("Opção inválida! Selecione 1 ou 2 para menus ou 3 para sair.");
                             break;
-                    }
+                }
             }
-            while (opcao != 3) ;
+            while (opcao != 3);
         }
     }
