@@ -80,3 +80,23 @@ console.log(greet(heyname));
 
 //const greet = name => 'Olá, ' + name + '!';
 
+
+//pp94
+//Escreva uma função chamada validUserNames que aceite um array de 
+//usernames (que serão strings).
+
+//A nossa função deverá retornar um novo array contendo apenas os usernames
+// que têm menos de 10 caracteres.
+// function validUserNames(arrUserNames) {
+//     return arrUserNames;
+// }
+
+// validUserNames(['joana', 'maria', 'pedro', 'joao', 'jose', 'mariajoana', 'mariapereira', 'joaninha']);
+
+//pp97
+//Escreva uma função chamada allEvens que aceite um array de números. 
+// A nossa função deverá retornar verdadeiro se todos os números forem pares.
+function allEvens(arrNumbers) {
+    return arrNumbers.every(num => num % 2 === 0);
+}
+console.log(allEvens([2, 4, 6, 8, 10])); // true
