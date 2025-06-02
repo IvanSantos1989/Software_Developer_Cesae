@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b73013da-4d47-48f2-92a5-1a0674da492e" name="Changes" comment="" />
+    <list default="true" id="880baf4c-bf33-4e2c-9558-fa4a5fb0584f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Ex4/AcabamentoImovel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ex4/Imovel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ex4/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ex4/TipoImovel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ex5/Agenda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ex5/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ex5/Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ex6/Atleta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ex6/Competicao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ex6/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO_PraticasJava8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO_PraticasJava8/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO_PraticasJava9.iml" beforeDir="false" afterPath="$PROJECT_DIR$/POO_PraticasJava9.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ex2/ContaBancaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex2/ContaBancaria.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -34,44 +50,30 @@
   }
 }</component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
+  &quot;associatedIndex&quot;: 1
 }</component>
-  <component name="ProjectId" id="2xj95OquejHwZcy7DFzvPXqVXOg" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2xyHWCPuCmiWx5uhG2Yz2ghU9zp" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ivanl/Documents/GitHub/Software_Developer_Cesae/POO_Java/POO_PraticasJava9/src&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="POO_PraticasJava9" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="POO_PraticasJava9" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b73013da-4d47-48f2-92a5-1a0674da492e" name="Changes" comment="" />
-      <created>1748440436569</created>
+      <changelist id="880baf4c-bf33-4e2c-9558-fa4a5fb0584f" name="Changes" comment="" />
+      <created>1748903422128</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1748440436569</updated>
+      <updated>1748903422128</updated>
     </task>
     <servers />
   </component>
