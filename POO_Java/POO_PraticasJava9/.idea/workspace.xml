@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="880baf4c-bf33-4e2c-9558-fa4a5fb0584f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Ex4/AcabamentoImovel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ex4/Imovel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ex4/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ex4/TipoImovel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ex5/Agenda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ex5/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ex5/Pessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ex6/Atleta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ex6/Competicao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ex6/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POO_PraticasJava8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO_PraticasJava8/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_PraticasJava9.iml" beforeDir="false" afterPath="$PROJECT_DIR$/POO_PraticasJava9.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex2/ContaBancaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex2/ContaBancaria.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
