@@ -45,3 +45,13 @@ img.square {
     width: 55px;
     height: 55px;
 }
+
+.meubotao {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+}

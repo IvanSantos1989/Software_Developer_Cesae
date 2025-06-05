@@ -3,6 +3,7 @@
 <head>
     <title>Hello</title>
 
+    <script src="../js/exercicios.js" defer></script>
 </head>
 
 <body>
@@ -15,6 +16,27 @@
     <button id="change-color">random</button>
     <p id="new-color"></p>
 </div>
+
+
+<!-- // calculadora simples -->
+ <div>
+    <h2>Calculadora Simples</h2>
+ 
+  <input type="number" id="num1" placeholder="coloque um número"/>
+ 
+  <select id="operação">
+    <option value="soma">+</option>
+    <option value="subtração">-</option>
+    <option value="multiplicação">*</option>
+    <option value="divisão">/</option>
+  </select>
+ 
+    <input type="number" id="num2" placeholder="coloque outro número"/>
+
+  <button  onclick="calcular()">=</button>
+  <p id="resultado"></p>
+</div>
+
 </body>
 
 </html>
