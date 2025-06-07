@@ -1,0 +1,5 @@
+package Ex3;
+
+public enum MarcaBarco {
+    BENTZ,DEVLIN,MAZURY,QUICKSILVER,SAVER,SMARTLINER,VORAZ,WOOLRIDGE
+}
