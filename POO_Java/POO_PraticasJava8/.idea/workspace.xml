@@ -3,6 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="0df01480-df50-4ca0-a04c-28b07f5ac8ea" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../POO_PraticasJava9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO_PraticasJava9/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex1/Carro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex1/Carro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex1/MainComposto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex1/MainComposto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex1/TipoCombustivel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex1/TipoCombustivel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex2/ContaBancaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex2/ContaBancaria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex3/ReinoAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex3/ReinoAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex4/AcabamentoImovel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex4/AcabamentoImovel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex4/TipoImovel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex4/TipoImovel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex5/Agenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex5/Agenda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex5/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO_PraticasJava9/src/Ex5/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="880baf4c-bf33-4e2c-9558-fa4a5fb0584f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../POO_PraticasJava8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO_PraticasJava8/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO_PraticasJava9.iml" beforeDir="false" afterPath="$PROJECT_DIR$/POO_PraticasJava9.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO_PraticasJava9/POO_PraticasJava9.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO_PraticasJava9/POO_PraticasJava9.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ex1/Carro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex1/Carro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ex2/ContaBancaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex2/ContaBancaria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ex3/ReinoAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex3/ReinoAnimal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,16 +49,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ivanl/Documents/GitHub/Software_Developer_Cesae/POO_Java/POO_PraticasJava9/src&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.MainComposto.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/ivanl/Documents/GitHub/Software_Developer_Cesae/POO_Java/POO_PraticasJava9/src",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ivanl\Documents\GitHub\Software_Developer_Cesae\POO_Java\POO_PraticasJava9\src" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="880baf4c-bf33-4e2c-9558-fa4a5fb0584f" name="Changes" comment="" />
