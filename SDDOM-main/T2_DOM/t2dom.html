@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>T2 DOM</title>
+    <script src="script_dom.js"></script>
+</head>
+<body>
+    <button onclick="mudarCor(this, 'red')">Vermelho</button>
+    <button onclick="mudarCor(this, 'green')">Verde</button>
+    <button onclick="mudarCor(this, 'blue')">Azul</button>
+
+    <button onclick="adicionarParagrafo()">Adicionar Parágrafo</button>
+
+    <button onclick="toggleParagrafo()">Esconder/Mostrar</button>
+    <p id="EsconderMostrar">Aqui tens a solução do exercício</p>
+
+    <h2>Contador</h2>
+    <p id="contador">0</p>
+    <button onclick="atualizarContador(1)">Aumentar</button>
+    <button onclick="atualizarContador(-1)">Diminuir</button>
+    <button onclick="atualizarContador(0)">Zerar</button>
+
+    <h2>O que já aprendi em JS:</h2>
+    <ul id="lista-js">
+        <li>Lógica de Código JS</li>
+        <li>Funções</li>
+        <li>DOM</li>
+        <li>Eventos</li>
+    </ul>
+    <button onclick="marcarAprendido()">aprendido</button>
+
+    <button onclick="adicionarAprendido()">Adicionar outro aprendizado</button>
+</body>
+</html>
