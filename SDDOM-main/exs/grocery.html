@@ -4,17 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vou às Compras</title>
+
+    <script src="../js/exercicios.js" defer></script>
   </head>
   <body>
+    <!-- <h2>Lista de Compras</h2>
     <form>
-      <input type="text" placeholder="Introduza o Produto" value="" /><br />
-      <input id="qt"
+        <input type="number" id="quantidade" placeholder="Qtd" min="1" required>
+        <input type="text" id="item" placeholder="Novo item" required>
+        <button type="submit">Adicionar</button>
+    </form>
+    <ul id="grocery-list"></ul> -->
+
+    <form id="myShoppingList">
+      <input name="product" type="text" placeholder="Introduza o Produto" value="" /><br />
+      <input name="qt" id="qt"
         type="number"
         placeholder="Introduza a Quantidade"
         value=""
       /><br />
-      <button type="submit">Submeter</button>
+      <button  type="submit">Submeter</button>
     </form>
+
+    <ul></ul>
 
     <ul></ul>
   </body>
