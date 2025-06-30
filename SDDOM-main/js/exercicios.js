@@ -188,16 +188,35 @@ let myForm = document.querySelector('form');
 //   //myForm.submit();
 // })
 
-let myFormG = document.getElementById('myShoppingList');
+// let myFormG = document.getElementById('myShoppingList');
 
-myFormG.addEventListener('submit', function(e){
-  e.preventDefault();
-  const formData = new FormData(this);
+// myFormG.addEventListener('submit', function(e){
+//   e.preventDefault();
+//   const formData = new FormData(this);
 
-  const li = document.createElement('li');
-  const myUl = document.querySelector('ul');
-  li.innerText = formData.get('product') + '-' + formData.get('qt');
-  myUl.appendChild(li)
+//   const li = document.createElement('li');
+//   const myUl = document.querySelector('ul');
+//   li.innerText = formData.get('product') + '-' + formData.get('qt');
+//   myUl.appendChild(li)
 
-  myFormG.reset();
-});
+//   myFormG.reset();
+// });
+
+
+//função que faz a consulta À Api, traz o resultado em json e tranforma de forma a que o JS consiga interpretar
+const loadTVShow = async() => {
+  const result = await fetch('https://api.tvmaze.com/singlesearch/shows?q=friends');
+  const data = await result.json();
+ 
+  return data;
+}
+ 
+//função que constrói com o resultado da api (quando ele chegar) o html
+const getData = async() => {
+  const result = await loadTVShow();
+ 
+  //console log ou criar elementos, etc
+  console.log(result)
+}
+ 
+getData();
