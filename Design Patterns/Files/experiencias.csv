@@ -1,0 +1,7 @@
+id,nome,id_guia_experiencia,preco_adulto,preco_crianca
+E01,Intro to Python,G01,50,30
+E02,Web Dev Bootcamp,G02,70,40
+E03,Data Science Basics,G01,80,50
+E04,Game Development 101,G03,90,60
+E05,Cybersecurity Intro,G04,85,55
+E06,AI for Kids,G02,60,35

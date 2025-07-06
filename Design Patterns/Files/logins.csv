@@ -1,0 +1,7 @@
+username,password,tipo_acesso
+admin,admin123,ADMIN
+rececao,rec123,GESTAO
+G01,gui@g01,GUIA
+G02,gui@g02,GUIA
+G03,gui@g03,GUIA
+G04,gui@g04,GUIA
