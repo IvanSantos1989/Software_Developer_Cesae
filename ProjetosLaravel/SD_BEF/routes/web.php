@@ -1,19 +1,25 @@
 <?php
 
+use App\Http\Controllers\UtilController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [UtilController::class, 'welcome'])->name('welcome');
+
+Route::get('/home', [UtilController::class, 'index'])->name('home');
+
+Route::get('/hello', [UtilController::class, 'hello'])->name('hello');
+
+Route::get('/courses', [UtilController::class, 'courses'])->name('courses');
+
+Route::get('/modules/{name}', function($name){
+    return '<h1>Este é o módulo de:'.$name.'</h1>';
 });
 
-Route::get('/home', function () {
-    return view('welcome');
-});
+Route::get('/add_user', [UserController::class, 'addUser'])->name('add_user');
 
-Route::get('/hello', function () {
-    return '<h1>Hello World</h1>';
-});
+Route::get('/allUsers', [UserController::class, 'allUsers'])->name('allUsers');
 
-Route::get('/course', function () {
-    return '<h1>Olá, curso Software Developer</h1>';
+Route::fallback(function(){
+    return view('utils.fall_back');
 });
