@@ -9,7 +9,16 @@ class UtilController extends Controller
    public function index() {
 
         $myName = $this->getUser();
-        return view('utils.homepage', compact('myName'));
+
+        $loginUser = [
+            'name' =>'Ivan',
+            'email' => 'ivan@gmail.com',
+            'phone' => '123456789'
+        ];
+
+        $cesaeInfo = $this->getCesaeInfo();
+
+        return view('utils.homepage', compact('myName', 'loginUser', 'cesaeInfo'));
     }
 
     public function welcome() {
@@ -32,5 +41,15 @@ class UtilController extends Controller
         return $myName;
     }
 
+    //simula dinamicamente a informação do CESAE
+    //poderia ser uma query á base de dados
+    private function getCesaeInfo() {
+        $cesaeInfo = [
+            'name' => 'CESAE',
+            'address' => 'Rua Ciriaco 186, 4150-212 Porto',
+            'email' => 'cesae@cesae.pt'
+        ];
+        return $cesaeInfo;
+    }
 
 }

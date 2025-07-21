@@ -20,6 +20,10 @@ Route::get('/add_user', [UserController::class, 'addUser'])->name('add_user');
 
 Route::get('/allUsers', [UserController::class, 'allUsers'])->name('allUsers');
 
+Route::get('/test-queries', [UserController::class, 'testSqlQueries']);
+
+Route::get('/tasks', [UserController::class, 'showTasks'])->name('tasks');
+
 Route::fallback(function(){
     return view('utils.fall_back');
 });
