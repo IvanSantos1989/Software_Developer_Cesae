@@ -1,8 +1,16 @@
-@extends('layouts.fe_master')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('content')
-    <h1>Hello World</h1>
-    <ul>
-        <li><a href="{{ route('home') }}">Voltar à Homepage</a></li>
-    </ul>
-@endsection
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Olá {{$myName}}</h1>
+    <a href="{{ route('home_name') }}">Voltar</a>
+</body>
+
+</html>

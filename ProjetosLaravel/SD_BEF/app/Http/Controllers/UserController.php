@@ -2,49 +2,64 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
-    public function addUser() {
+
+    //função que carrega a view onde no futuro teremos um form para adicionar users
+    public function createUser(){
         return view('users.add_user');
     }
 
-    public function allUsers() {
-        //simula ir a base de dados para buscar os utilizadores
-        $users = $this->getUser();
+    public function allUsers(){
 
-        //ir de forma real a base de dados carregar todos os users
+        //simula ir à base de dados carregar todos os users
+        $users = $this->getUsers();
+
+        //ir de forma real à base de dados
         $usersFromDB = $this->getUsersFromDB();
-        //dd($users);
 
-        //carrega a view com os $users e $usersFromDB
-        return view('users.allUsers', compact('users', 'usersFromDB'));
+        $courseResp = User::where('id', 5)
+                        ->select('name', 'email')
+                        ->first();
+
+        //dd($courseResp->name);
+
+
+        //carrega a view users.all_users com os dados de $users e $usersFromDB
+        return view('users.all_users', compact(
+            'users',
+            'usersFromDB',
+            'courseResp'));
     }
 
     public function testSqlQueries(){
 
+        //query de insert. no futuro, os dados a inserir vêm do formulário (resquest)
         // DB::table('users')->insert([
-        //     'name' => 'Santos',
-        //     'email' => 'santos@example.com',
-        //     'password' => 'pass123',
+        //     'name'=> 'Sara',
+        //     'email'=>'sara5@gmail.com',
+        //     'password'=>'1234'
         // ]);
 
         //query de update. no futuro, os dados a actualizar vêm do formulário (resquest)
         // DB::table('users')
-        // ->where('id', 1)
+        // ->where('id', 4)
         // ->update([
         //     'name' => 'Rita',
         //     'address'=> 'Rua da Rita',
         //     'updated_at' => now()
         // ]);
 
-        //update or insert
-        //se tiver o email, actualiza o user, se não existir, insere um novo
+
+        //Update or insert
+
         // DB::table('users')->updateOrInsert(
         // [
-        //     'email'=>'sara5@gmail.com',
+        //     'email'=>'sara90@gmail.com',
         // ],
         // [
         //     'name'=> 'Bárbara',
@@ -52,57 +67,33 @@ class UserController extends Controller
         //     'updated_at' => now(),
         // ]);
 
-        //apagar o user pelo id
+        //apagar o user com id 3
         // DB::table('users')
-        // ->where('id', 7)
+        // ->where('id',3)
         // ->delete();
 
         return response()->json('query ok!');
     }
 
-    public function showTasks() {
-        // Array de tarefas (dados estáticos)
-        $tasks = [
-            ['name' => 'Rita', 'task' => 'estudar laravel'],
-            ['name' => 'Igor', 'task' => 'estudar Sql'],
+    private function getUsers(){
+
+        //simula ir à base de dados carregar todos os users
+        $users = [
+            ['id' => 1, 'name'=> 'Rita', 'phone'=> '915555555'],
+            ['id' => 2, 'name'=> 'Rui', 'phone'=> '915555555'],
+            ['id' => 3, 'name'=> 'Patrícia', 'phone'=> '915555555'],
         ];
 
-        // Tasks vindas da base de dados com JOIN aos users
-        $tasksFromDB = DB::table('tasks')
-            ->join('users', 'tasks.user_id', '=', 'users.id')
-            ->select('tasks.*', 'users.name as user_name')
-            ->get();
-
-        return view('utils.tasks', compact('tasks', 'tasksFromDB'));
-    }
-
-    private function getUser() {
-        // query á base de dados para buscar o user
-       // $users = ['Ivan', 'Maria', 'João'];
-       $users = [
-        ['id' => 1, 'name' => 'Rita', 'phone' => '915555555'],
-        ['id' => 2, 'name' => 'Pedro', 'phone' => '916666666'],
-        ['id' => 3, 'name' => 'Ana', 'phone' => '917777777'],
-        ['id' => 4, 'name' => 'Luís', 'phone' => '918888888'],
-        ['id' => 5, 'name' => 'Sofia', 'phone' => '919999999']
-       ];
         return $users;
     }
 
-    private function getCesaeInfo() {
-        $cesaeInfo = [
-            'name' => 'CESAE',
-            'address' => 'Rua Ciriaco 186, 4150-212 Porto',
-            'email' => 'cesae@cesae.pt'
-        ];
-        return $cesaeInfo;
-    }
-
     private function getUsersFromDB(){
-        //query real á base de dados
-        //carrega os users da base de dados
-        $users = DB::table('users')->get();
-        //dd($users); //para ver os dados carregados
+        //query real que vai à base de dados buscar todos os users
+        $users = User::get();
+        //->where('password', '!=', '1234')
+
+        //dd($users);
+
         return $users;
     }
 }
