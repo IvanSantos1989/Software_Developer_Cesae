@@ -4,7 +4,7 @@
 @section('content')
     <h1>Sou a tua HomePage</h1>
     <h5>Olá {{ isset($myName) ? $myName : 'Utilizador' }}</h5>
-    <h5>o user logado é {{ $loginUser['name'] }} e o email é {{ $loginUser['email'] }}</h5>
+    <h5>O user logado é {{ $loginUser['name'] }} e o email é {{ $loginUser['email'] }}</h5>
     <img src="{{ asset('images/images.jpg') }}" alt="">
 
     <h6>Dados do Cesae</h6>

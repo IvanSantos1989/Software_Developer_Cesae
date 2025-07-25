@@ -21,7 +21,9 @@
                 </tr>
             @endforeach
 
-
         </tbody>
     </table>
+    <ul>
+    <li><a href="{{ route('home_name') }}">Voltar à Homepage</a></li>
+    </ul>
 @endsection

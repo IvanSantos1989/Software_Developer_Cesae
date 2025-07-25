@@ -11,9 +11,9 @@ class UtilController extends Controller
         $myName = $this->getUser();
 
         $loginUser = [
-            'name' =>'Sara',
-            'email' => 'sara@gmail.com',
-            'phone' => '96666666'
+            'name' =>'Ivan',
+            'email' => 'ivandev@gmail.com.pt',
+            'phone' => '999-999-999',
         ];
 
         $cesaeInfo = $this->getCesaeInfo();
@@ -28,7 +28,7 @@ class UtilController extends Controller
 
     private function getUser(){
         //query à base de dados para buscar o user
-        $myName = 'Sara';
+        $myName = 'Ivan';
         return $myName;
 
     }
@@ -38,7 +38,7 @@ class UtilController extends Controller
         //simula dinamicamente ir à base de dados
         return $cesaeInfo = [
             'name' => 'Cesae',
-            'address' => 'RUa do Cesae'
+            'address' => 'Rua do Cesae - Porto'
         ];
     }
 
