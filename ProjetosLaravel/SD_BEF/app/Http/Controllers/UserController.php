@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Task;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+
 
 class UserController extends Controller
 {
@@ -74,6 +77,41 @@ class UserController extends Controller
 
         return response()->json('query ok!');
     }
+
+    //função que retorna a view de um user (o que estámos a clicar)
+    public function viewUser($id){
+        $myUser = User::where('id', $id)->first();
+
+        return view('users.show_user', compact('myUser'));
+    }
+
+    //função que apaga um user com base no id
+    public function deleteUser($id){
+        Task::where('user_id', $id)->delete(); //apaga as tasks do user
+
+        User::where('id', $id)->delete();
+
+        return back();
+    }
+
+    public function storeUser(Request $request){
+
+        //dd($request->all());
+
+        //validação dos dados do formulário
+        $request->validate([
+        'name' => 'string|max:50|required',
+        'email' => 'required|unique:users|email'
+    ]);
+
+    User::insert([
+        'name' => $request->name,
+        'email' => $request->email,
+        'password' => Hash::make($request->password),
+    ]);
+
+    return redirect()->route('users.all');
+}
 
     private function getUsers(){
 

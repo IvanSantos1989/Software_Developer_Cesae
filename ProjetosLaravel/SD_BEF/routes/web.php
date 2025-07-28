@@ -21,12 +21,17 @@ Route::get('/modules/{name}', function($name){
 
 /* routes for Users */
 Route::get('/add-users', [UserController::class, 'createUser'])->name('users.add');
+Route::post('/store-user', [UserController::class, 'storeUser'])->name('users.store');
+
 Route::get('/users', [UserController::class, 'allUsers'])->name('users.all');
+Route::get('/user/{id}', [UserController::class, 'viewUser'])->name('user.show');
+Route::get('/delete-user/{id}', [UserController::class, 'deleteUser'])->name('users.delete');
+
 
 /* routes for Tasks */
 Route::get('/tasks', [TaskController::class, 'allTasks'])->name('tasks.all');
-
-
+Route::get('/task/{id}', [TaskController::class, 'viewTask'])->name('tasks.show');
+Route::get('/delete-task/{id}', [TaskController::class, 'deleteTask'])->name('tasks.delete');
 
 /* routes for testing proposes */
 Route::get('/test-queries', [UserController::class, 'testSqlQueries']);

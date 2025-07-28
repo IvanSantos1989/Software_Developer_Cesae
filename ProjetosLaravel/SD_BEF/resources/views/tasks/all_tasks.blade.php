@@ -18,6 +18,8 @@
                     <td>{{ $task->name }}</td>
                     <td>{{ $task->description }}</td>
                     <td>{{ $task->username }}</td>
+                    <td><a href="{{ route('tasks.show', $task->id) }}" class="btn btn-info me-2">Ver</a>
+                        <a href="{{ route('tasks.delete', $task->id) }}" class="btn btn-danger">Apagar</a></td>
                 </tr>
             @endforeach
 

@@ -22,6 +22,7 @@
                 <th scope="col">Nome</th>
                 <th scope="col">Email</th>
                 <th scope="col">NIF</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -31,6 +32,8 @@
                     <td>{{ $user->name }}</td>
                     <td>{{ $user->email }}</td>
                     <td>{{ $user->nif }}</td>
+                    <td><a href="{{ route('user.show', $user->id) }}" class="btn btn-info me-2">Ver</a>
+                        <a href="{{ route('users.delete', $user->id) }}" class="btn btn-danger">Apagar</a></td>
                 </tr>
             @endforeach
 
