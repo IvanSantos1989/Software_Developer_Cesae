@@ -32,7 +32,29 @@ class TaskController extends Controller
         return back();
     }
 
+    //função que carrega a view para adicionar uma task
+    public function createTask(){
+        $users = DB::table('users')->select('id', 'name')->get();
 
+        return view('tasks.add_task', compact('users'));
+    }
+
+    //função que guarda uma task na base de dados
+    public function storeTask(Request $request){
+        $request->validate([
+            'name' => 'required|string|max:50',
+            'description' => 'required|string',
+            'user_id' => 'required|exists:users,id',
+        ]);
+        Task::insert([
+            'name' => $request->name,
+            'description' => $request->description,
+            'user_id' => $request->user_id,
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+        return redirect()->route('tasks.all')->with('message', 'Task added successfully!');
+    }
 
     private function getAllTasks(){
         $tasks = Task::join('users', 'users.id', '=', 'tasks.user_id')

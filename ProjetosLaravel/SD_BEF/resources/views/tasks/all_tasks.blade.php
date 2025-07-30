@@ -1,5 +1,11 @@
 @extends('layouts.fe_master')
 @section('content')
+    @if (session('message'))
+        <div class="alert alert-success">
+            {{session('message')}}
+        </div>
+    @endif
+    
     <h4>Aqui terás todas as tarefas</h4>
 
     <table class="table">
