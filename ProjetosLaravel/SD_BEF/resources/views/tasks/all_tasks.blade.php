@@ -5,7 +5,7 @@
             {{session('message')}}
         </div>
     @endif
-    
+
     <h4>Aqui terás todas as tarefas</h4>
 
     <table class="table">
@@ -14,7 +14,7 @@
                 <th scope="col">#</th>
                 <th scope="col">Nome</th>
                 <th scope="col">Description</th>
-                <th scope="col">Nome Responsável</th>
+                <th scope="col">Nome do Responsável</th>
             </tr>
         </thead>
         <tbody>
@@ -24,7 +24,7 @@
                     <td>{{ $task->name }}</td>
                     <td>{{ $task->description }}</td>
                     <td>{{ $task->username }}</td>
-                    <td><a href="{{ route('tasks.show', $task->id) }}" class="btn btn-info me-2">Ver</a>
+                    <td><a href="{{ route('tasks.show', $task->id) }}" class="btn btn-info me-2">Ver / Editar</a>
                         <a href="{{ route('tasks.delete', $task->id) }}" class="btn btn-danger">Apagar</a></td>
                 </tr>
             @endforeach

@@ -22,7 +22,29 @@ class TaskController extends Controller
             ->where('tasks.id', $id)
             ->first();
 
-        return view('tasks.show_task', compact('myTask'));
+            $users = DB::table('users')->get();
+
+        return view('tasks.show_task', compact('myTask', 'users'));
+    }
+
+    //função que atualiza uma task com base no id
+    public function updateTask(Request $request){
+        //dd($request->all());
+
+        $request->validate([
+            'name' => 'required',
+            'user_id' => 'required',
+        ]);
+
+        Task::where('id', $request->id)
+            ->update([
+                'name' => $request->name,
+                'description' => $request->description,
+                'user_id' => $request->user_id,
+                'updated_at' => now()
+            ]);
+
+        return redirect()->route('tasks.all')->with('message', 'Task updated successfully!');
     }
 
     //função que apaga uma task com base no id

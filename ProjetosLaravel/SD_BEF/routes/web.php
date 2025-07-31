@@ -24,6 +24,9 @@ Route::get('/modules/{name}', function($name){
 Route::get('/add-users', [UserController::class, 'createUser'])->name('users.add');
 Route::post('/store-user', [UserController::class, 'storeUser'])->name('users.store');
 
+//rota que pega nos dados do formulário para fazer um update
+Route::put('/update-user', [UserController::class, 'updateUser'])->name('users.update');
+
 Route::get('/users', [UserController::class, 'allUsers'])->name('users.all');
 Route::get('/user/{id}', [UserController::class, 'viewUser'])->name('user.show');
 Route::get('/delete-user/{id}', [UserController::class, 'deleteUser'])->name('users.delete');
@@ -35,6 +38,9 @@ Route::get('/task/{id}', [TaskController::class, 'viewTask'])->name('tasks.show'
 Route::get('/delete-task/{id}', [TaskController::class, 'deleteTask'])->name('tasks.delete');
 Route::get('/add-task', [TaskController::class, 'createTask'])->name('tasks.add');
 Route::post('/store-task', [TaskController::class, 'storeTask'])->name('tasks.store');
+
+//rota que pega nos dados do formulário das tasks para fazer um update
+Route::put('/update-task', [TaskController::class, 'updateTask'])->name('tasks.update');
 
 
 /* routes for testing proposes */
