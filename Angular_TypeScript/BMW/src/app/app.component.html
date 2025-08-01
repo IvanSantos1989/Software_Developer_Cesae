@@ -1,0 +1,48 @@
+<app-header/>
+<app-carousel
+  [slideTitle]="'BMW Série 3'"
+  [slideDescription]="'O BMW Série 3 most technology.'"
+  [slideImage]="'https://cdn.pixabay.com/photo/2023/01/23/20/10/bmw-7739554_1280.jpg'"
+
+  [slideTitle2]="'BMW Série 5'"
+  [slideDescription2]="'Luxury and performance combined.'"
+  [slideImage2]="'https://cdn.pixabay.com/photo/2021/10/13/13/19/bmw-6706660_1280.jpg'"
+
+  [slideTitle3]="'BMW X6'"
+  [slideDescription3]="'Design and power in one.'"
+  [slideImage3]="'https://cdn.pixabay.com/photo/2016/03/23/07/44/bmw-1274292_960_720.jpg'"
+/>
+
+<div class="container mt-5 mb-5">
+
+  <app-cards/>
+
+</div>
+
+<div class="container mt-3 mb-3">
+  <div class="row justify-content-center">
+
+    <div class="col-md-6 p-2">
+      <p>{{mainDescription}}</p>
+    </div>
+
+    <div class="col-md-3 p-2">
+      <app-images src="{{mainImage1}}" class="card-img-top" alt="Fissure in Sandstone"/>
+    </div>
+
+  </div>
+</div>
+
+<div class="container mt-3 mb-3">
+  <div class="row justify-content-center">
+
+    <div class="col-md-3 p-2">
+      <app-images src="{{mainImage2}}" class="card-img-top" alt="Fissure in Sandstone"/>
+    </div>
+
+    <div class="col-md-6 p-2">
+      <p>{{mainDescription2}}</p>
+    </div>
+  </div>
+</div>
+<app-footer/>
