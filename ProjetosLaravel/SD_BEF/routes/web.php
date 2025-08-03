@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BookController;
 use App\Http\Controllers\TaskController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\UtilController;
@@ -41,6 +42,14 @@ Route::post('/store-task', [TaskController::class, 'storeTask'])->name('tasks.st
 
 //rota que pega nos dados do formulário das tasks para fazer um update
 Route::put('/update-task', [TaskController::class, 'updateTask'])->name('tasks.update');
+
+// rotas para Books
+Route::get('/books', [BookController::class, 'allBooks'])->name('books.all');
+Route::get('/book/{id}', [BookController::class, 'viewBook'])->name('books.show');
+Route::put('/update-book', [BookController::class, 'updateBook'])->name('books.update');
+Route::get('/delete-book/{id}', [BookController::class, 'deleteBook'])->name('books.delete');
+Route::get('/add-book', [BookController::class, 'createBook'])->name('books.add');
+Route::post('/store-book', [BookController::class, 'storeBook'])->name('books.store');
 
 
 /* routes for testing proposes */

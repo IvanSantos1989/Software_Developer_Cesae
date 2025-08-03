@@ -17,7 +17,7 @@
     <script src="{{ asset('js/script.js') }}" defer></script>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -44,9 +44,19 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container flex-grow-1">
         @yield('content')
     </div>
+
+    <!-- Footer -->
+    <footer class="navbar navbar-expand-lg bg-body-tertiary mt-auto">
+        <div class="container-fluid">
+            <div class="navbar-nav mx-auto">
+                <span class="nav-link text-muted">© 2025 CESAE - Software Developer Course</span>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>

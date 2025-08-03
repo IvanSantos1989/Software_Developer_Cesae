@@ -17,7 +17,9 @@
         <li><a href="{{ route('hello_route_name') }}">Hello</a></li>
         <li><a href="{{ route('users.add') }}">Adicionar Users</a></li>
         <li><a href="{{ route('users.all') }}">Todos os Users</a></li>
-        <li><a href="{{ route('tasks.all') }}">Tarefas</a></li>
+        <li><a href="{{ route('tasks.all') }}">Ver lista de Tarefas</a></li>
         <li><a href="{{ route('tasks.add') }}">Adicionar Tarefa</a></li>
+        <li><a href="{{ route('books.all') }}">Oferta de Livros para as Férias</a></li>
+        <li><a href="{{ route('books.add') }}">Adicionar um Livro</a></li>
     </ul>
 @endsection
