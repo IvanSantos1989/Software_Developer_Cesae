@@ -21,6 +21,11 @@
 
     <hr>
     <h4>Users vindos da Base de dados</h4>
+    <form action="">
+        <input type="text" placeholder="Insira o que quer pesquisar" name="search" value="{{request()->query('search')}}">
+        <button type="submit" class="btn btn-info">Pesquisar</button>
+    </form>
+
     <table class="table">
         <thead>
             <tr>

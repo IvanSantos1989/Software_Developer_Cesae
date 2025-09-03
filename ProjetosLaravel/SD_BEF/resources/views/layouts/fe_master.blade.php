@@ -28,17 +28,43 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="{{ route('home_name') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="{{ route('books.all') }}">Livros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="{{ route('tasks.all') }}">Tarefas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="{{ route('users.all') }}">Utilizadores</a>
                     </li>
+                    @auth
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('dashboard') }}">BackOffice</a>
+                    </li>
+                    @endauth
+                </ul>
+
+                <ul class="navbar-nav ms-auto">
+                    @auth
+                    <li class="nav-item">
+                        <span class="navbar-text">Olá, {{ auth()->user()->name }}</span>
+                    </li>
+                    <li class="nav-item">
+                        <form method="POST" action="{{ route('logout') }}" class="d-inline">
+                            @csrf
+                            <button type="submit" class="btn btn-outline-secondary btn-sm">Logout</button>
+                        </form>
+                    </li>
+                    @else
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('login') }}">Entrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('users.add') }}">Registar</a>
+                    </li>
+                    @endauth
                 </ul>
             </div>
         </div>

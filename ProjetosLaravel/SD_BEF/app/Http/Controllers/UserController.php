@@ -23,7 +23,8 @@ class UserController extends Controller
         $users = $this->getUsers();
 
         //ir de forma real à base de dados
-        $usersFromDB = $this->getUsersFromDB();
+        $search = request()->query('search') ? request()->query('search') : null;
+        $usersFromDB = $this->getUsersFromDB($search);
 
         $courseResp = User::where('id', 5)
                         ->select('name', 'email')
@@ -142,9 +143,18 @@ class UserController extends Controller
         return $users;
     }
 
-    private function getUsersFromDB(){
+    private function getUsersFromDB($search){
         //query real que vai à base de dados buscar todos os users
-        $users = User::get();
+        //$users = User::get();
+        $query = DB::table('users');
+
+        if($search) {
+            $query->where('name', 'like', "%{$search}%")
+                  ->orwhere('email', $search);
+        }
+
+        $users = $query->get();
+
         //->where('password', '!=', '1234')
 
         //dd($users);
