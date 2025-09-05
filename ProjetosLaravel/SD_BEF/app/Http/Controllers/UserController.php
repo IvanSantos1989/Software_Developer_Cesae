@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 
 
 class UserController extends Controller
@@ -118,11 +119,20 @@ class UserController extends Controller
         //dd($request->all());
 
         $request->validate([
-            'name' => 'required'
+            'name' => 'required',
+            'photo' => 'image'
         ]);
+
+        $photoPath = null;
+
+        if($request->hasFile('photo')) {
+            $photoPath = Storage::putFile('documents',
+            $request->photo);
+        }
 
         User::where('id', $request->id)
             ->update([
+                'photo' => $photoPath,
                 'name' => $request->name,
                 'nif' => $request->nif,
                 'address' => $request->address,

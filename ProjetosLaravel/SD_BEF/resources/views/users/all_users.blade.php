@@ -40,6 +40,9 @@
             @foreach ($usersFromDB as $user)
                 <tr>
                     <th scope="row">{{ $user->id }}</th>
+                    <td><img width="40px" height="40px"
+                            src="{{ $user->photo ? asset('storage/' . $user->photo) : asset('images/nophoto.jpg') }}"
+                            alt=""></td>
                     <td>{{ $user->name }}</td>
                     <td>{{ $user->email }}</td>
                     <td>{{ $user->nif }}</td>

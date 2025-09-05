@@ -5,7 +5,8 @@
 
     <h3>Editar User {{ $myUser->name }}</h3>
 
-    <form method="POST" action="{{ route('users.update') }}">
+    <form method="POST" action="{{ route('users.update') }}"
+    enctype="multipart/form-data">
         @csrf
         @method('PUT')
         <input type="hidden" name="id" value="{{ $myUser->id }}">
@@ -35,6 +36,10 @@
             <input type="text"
             @if ($myUser->nif != 'ainda não tinhamos o nif') readonly @endif
             class="form-control" name="nif" value="{{ $myUser->nif }}">
+        </div>
+
+        <div class="mb-3">
+            <input type="file" name="photo" accept="images/*">
         </div>
 
         <button type="submit" class="btn btn-primary">Salvar</button>
