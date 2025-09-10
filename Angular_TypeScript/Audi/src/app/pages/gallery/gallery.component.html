@@ -1,1 +1,17 @@
-<p>gallery works!</p>
+<h2 class="text-center mt-5">check our gallery</h2>
+
+<p class="text-center mb-4">Check out some of Audi most iconic models in our exclusive gallery.</p>
+
+<div class="text-center mb-5">
+  <button class="btn btn-outline-primary">View now</button>
+</div>
+
+<div class="container">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+    <div class="col" *ngFor="let img of audiImages">
+      <div class="card h-100">
+        <img [src]="img" class="card-img-top" alt="Audi car" />
+      </div>
+    </div>
+  </div>
+</div>

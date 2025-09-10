@@ -4,6 +4,7 @@ import {RouterOutlet} from '@angular/router';
 import {FooterComponent} from '../../master-page/footer/footer.component';
 import {CarouselComponent} from '../../components/carousel/carousel.component';
 import {CardsComponent} from '../../components/cards/cards.component';
+import {ImagesComponent} from '../../components/images/images.component';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,8 @@ import {CardsComponent} from '../../components/cards/cards.component';
     RouterOutlet,
     FooterComponent,
     CarouselComponent,
-    CardsComponent
+    CardsComponent,
+    ImagesComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
