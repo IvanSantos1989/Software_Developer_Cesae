@@ -1,26 +1,38 @@
-<div class="row justify-content-center">
-  <div class="col-12 col-sm-6 col-md-3">
-    <app-card
-    [title]="cardTitle"
-    [description]="cardDescription"
-    [image]="cardImage"
-    />
-  </div>
+<!--<div class="row justify-content-center">-->
+<!--  <div class="col-12 col-sm-6 col-md-3">-->
+<!--    <app-card-->
+<!--    [title]="cardTitle"-->
+<!--    [description]="cardDescription"-->
+<!--    [image]="cardImage"-->
+<!--    />-->
+<!--  </div>-->
 
-  <div class="col-12 col-sm-6 col-md-3">
-    <app-card
-    title="card title 2"
-    description="description 2"
-    image="https://cdn.pixabay.com/photo/2016/12/08/00/10/audi-1890687_1280.jpg"
-/>
-  </div>
+<!--  <div class="col-12 col-sm-6 col-md-3">-->
+<!--    <app-card-->
+<!--    title="card title 2"-->
+<!--    description="description 2"-->
+<!--    image="https://cdn.pixabay.com/photo/2016/12/08/00/10/audi-1890687_1280.jpg"-->
+<!--/>-->
+<!--  </div>-->
 
-  <div class="col-12 col-sm-6 col-md-3">
-    <app-card
-    title="card title 3"
-    description="description 3"
-    image="https://cdn.pixabay.com/photo/2021/11/01/21/20/car-6761801_1280.jpg"
-/>
-  </div>
+<!--  <div class="col-12 col-sm-6 col-md-3">-->
+<!--    <app-card-->
+<!--    title="card title 3"-->
+<!--    description="description 3"-->
+<!--    image="https://cdn.pixabay.com/photo/2021/11/01/21/20/car-6761801_1280.jpg"-->
+<!--/>-->
+<!--  </div>-->
 
+<!--</div>-->
+<div class="container mt-5 mb-5 text-center">
+  <div class="row justify-content-center">
+
+    <div class="col-md-3" *ngFor="let card of cards">
+      <app-card
+        [title]="card.title"
+        [description]="card.description"
+        [image]="card.image"
+      />
+    </div>
+  </div>
 </div>
