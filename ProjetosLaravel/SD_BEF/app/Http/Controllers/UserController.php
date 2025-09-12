@@ -7,7 +7,9 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\Storage;
+use App\Exports\UsersExport;
 
 
 class UserController extends Controller
@@ -151,6 +153,12 @@ class UserController extends Controller
         ];
 
         return $users;
+    }
+
+    //função que usa biblioteca de excel e exporta todos os users que temos na BD para um ficheiro excel
+    public function exportUsers(){
+
+        return Excel::download(new UsersExport, 'users.xlsx');
     }
 
     private function getUsersFromDB($search){

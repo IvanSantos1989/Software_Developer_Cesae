@@ -33,6 +33,8 @@ Route::get('/users', [UserController::class, 'allUsers'])->name('users.all');
 Route::get('/user/{id}', [UserController::class, 'viewUser'])->name('user.show');
 Route::get('/delete-user/{id}', [UserController::class, 'deleteUser'])->name('users.delete');
 
+//rota que exporta dados para o excel
+Route::get('/export-users', [UserController::class, 'exportUsers'])->name('users.export');
 
 /* routes for Tasks */
 Route::get('/tasks', [TaskController::class, 'allTasks'])->name('tasks.all');
