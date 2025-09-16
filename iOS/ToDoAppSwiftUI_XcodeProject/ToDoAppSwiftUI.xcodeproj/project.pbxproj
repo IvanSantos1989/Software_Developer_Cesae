@@ -1,0 +1,249 @@
+
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AAPP0000000000000000001 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFILE000000000000000001 /* App.swift */; };
+		1AAPP0000000000000000002 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFILE000000000000000002 /* Models.swift */; };
+		1AAPP0000000000000000003 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFILE000000000000000003 /* TaskViewModel.swift */; };
+		1AAPP0000000000000000004 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFILE000000000000000004 /* Views.swift */; };
+		1AASSET00000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AASSETREF0000000000000001 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1AFILE000000000000000001 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		1AFILE000000000000000002 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		1AFILE000000000000000003 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		1AFILE000000000000000004 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
+		1AASSETREF0000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1APRODUCT0000000000000001 /* ToDoAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AFRAMEWORKS0000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AGROUPROOT0000000000001 = {
+			isa = PBXGroup;
+			children = (
+				1ASOURCEGROUP0000000000001 /* ToDoAppSwiftUI */,
+				1APRODUCTSGROUP0000000000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1ASOURCEGROUP0000000000001 /* ToDoAppSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				1AFILE000000000000000001 /* App.swift */,
+				1ASUBGROUPMODELS000000000001 /* Models */,
+				1ASUBGROUPVMS0000000000001 /* ViewModels */,
+				1ASUBGROUPVIEWS000000000001 /* Views */,
+				1AASSETREF0000000000000001 /* Assets.xcassets */,
+			);
+			path = ToDoAppSwiftUI;
+			sourceTree = "<group>";
+		};
+		1ASUBGROUPMODELS000000000001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1AFILE000000000000000002 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1ASUBGROUPVMS0000000000001 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1AFILE000000000000000003 /* TaskViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1ASUBGROUPVIEWS000000000001 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1AFILE000000000000000004 /* Views.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1APRODUCTSGROUP0000000000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1APRODUCT0000000000000001 /* ToDoAppSwiftUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1ATARGET0000000000000001 /* ToDoAppSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ABUILDCONFIGLIST0000000000001 /* Build configuration list for PBXNativeTarget "ToDoAppSwiftUI" */;
+			buildPhases = (
+				1APHASESOURCES000000000001 /* Sources */,
+				1AFRAMEWORKS0000000000001 /* Frameworks */,
+				1APHASERESOURCES000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToDoAppSwiftUI;
+			productName = ToDoAppSwiftUI;
+			productReference = 1APRODUCT0000000000000001 /* ToDoAppSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1APROJECT0000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					1ATARGET0000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 1ABUILDCONFIGLISTPROJECT000000000001 /* Build configuration list for PBXProject "ToDoAppSwiftUI" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AGROUPROOT0000000000001;
+			productRefGroup = 1APRODUCTSGROUP0000000000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1ATARGET0000000000000001 /* ToDoAppSwiftUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1APHASERESOURCES000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AASSET00000000000000001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1APHASESOURCES000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAPP0000000000000000001 /* App.swift in Sources */,
+				1AAPP0000000000000000002 /* Models.swift in Sources */,
+				1AAPP0000000000000000003 /* TaskViewModel.swift in Sources */,
+				1AAPP0000000000000000004 /* Views.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1ABUILDCONFIGDEBUG000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ToDoAppSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1ABUILDCONFIGRELEASE000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ToDoAppSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1ABUILDCONFIGLISTPROJECT000000000001 /* Build configuration list for PBXProject "ToDoAppSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ABUILDCONFIGDEBUG000000000001 /* Debug */,
+				1ABUILDCONFIGRELEASE000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ABUILDCONFIGLIST0000000000001 /* Build configuration list for PBXNativeTarget "ToDoAppSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ABUILDCONFIGDEBUG000000000001 /* Debug */,
+				1ABUILDCONFIGRELEASE000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 1APROJECT0000000000000001 /* Project object */;
+}

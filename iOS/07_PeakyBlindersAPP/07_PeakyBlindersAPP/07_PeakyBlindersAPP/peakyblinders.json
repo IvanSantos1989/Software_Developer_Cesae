@@ -1,0 +1,50 @@
+[
+	{
+		"id": 1,
+		"name": "Thomas Shelby",
+        "description": "Thomas Michael ‘Tommy’ Shelby OBE DCM MM MP is the main protagonist of the Peaky Blinders. He is the son of Arthur and Mrs. Shelby, brother of Arthur, John, Ada and Finn Shelby, father of Duke, Charles and Ruby Shelby, as well as being the husband of Grace and Lizzie Shelby. He is the leader of the Birmingham criminal gang, the Peaky Blinders and the patriarch of the Shelby Family.",
+		"image": "tshelby"
+	},
+    {
+		"id": 2,
+		"name": "Arthur Shelby",
+        "description": "Arthur Shelby Jr. is one of the main protagonists of the Peaky Blinders. He is the eldest son of Arthur and Mrs Shelby, older brother of Thomas, John, Ada and Finn Shelby, as well as being the father of Billy Shelby. He was married to Linda Shelby and is a tough member of the Peaky Blinders. He is also Deputy Vice President of Shelby Company Limited and a member of the ICA, acting as his brother's right-hand man. Arthur has a drug problem, which gets worse over time.",
+		"image": "ashelby"
+	},
+    {
+		"id": 3,
+		"name": "Polly Gray",
+        "description": "Elizabeth Pollyanna Polly Gray (née Shelby) is one of the two former tritagonists (alongside John Shelby) of Peaky Blinders. She is the mother of Michael and Anna Gray, aunt of Arthur, Thomas, John, Ada and Finn Shelby, as well as being the matriarch of the Shelby Family. She is part of the Birmingham criminal gang, the Peaky Blinders, a certified accountant and company treasurer of Shelby Company Limited.",
+		"image": "pgray"
+	},
+    {
+		"id": 4,
+		"name": "John Shelby",
+        "description": "John Michael Shelby (also known as Johnny and John Boy) is one of the two former tritagonists (alongside Polly Gray) of Peaky Blinders. He is a British street gangster who was a soldier during the First World War. He is the third son of Arthur Shelby Sr, brother of Arthur, Thomas, Ada and Finn Shelby, as well as being the husband of Esme Shelby. John has seven children, two sons and two daughters with his deceased first wife Martha Shelby, and three children with Esme, whose genders are unknown. One of his daughters is called Katie Shelby, but his other children’s names are unknown.",
+		"image": "jshelby"
+	},
+    {
+        "id": 5,
+        "name": "Thomas Shelby",
+        "description": "Thomas Michael ‘Tommy’ Shelby OBE DCM MM MP is the main protagonist of the Peaky Blinders. He is the son of Arthur and Mrs. Shelby, brother of Arthur, John, Ada and Finn Shelby, father of Duke, Charles and Ruby Shelby, as well as being the husband of Grace and Lizzie Shelby. He is the leader of the Birmingham criminal gang, the Peaky Blinders and the patriarch of the Shelby Family.",
+        "image": "tshelby"
+    },
+    {
+        "id": 6,
+        "name": "Arthur Shelby",
+        "description": "Arthur Shelby Jr. is one of the main protagonists of the Peaky Blinders. He is the eldest son of Arthur and Mrs Shelby, older brother of Thomas, John, Ada and Finn Shelby, as well as being the father of Billy Shelby. He was married to Linda Shelby and is a tough member of the Peaky Blinders. He is also Deputy Vice President of Shelby Company Limited and a member of the ICA, acting as his brother's right-hand man. Arthur has a drug problem, which gets worse over time.",
+        "image": "ashelby"
+    },
+    {
+        "id": 7,
+        "name": "Polly Gray",
+        "description": "Elizabeth Pollyanna Polly Gray (née Shelby) is one of the two former tritagonists (alongside John Shelby) of Peaky Blinders. She is the mother of Michael and Anna Gray, aunt of Arthur, Thomas, John, Ada and Finn Shelby, as well as being the matriarch of the Shelby Family. She is part of the Birmingham criminal gang, the Peaky Blinders, a certified accountant and company treasurer of Shelby Company Limited.",
+        "image": "pgray"
+    },
+    {
+        "id": 8,
+        "name": "John Shelby",
+        "description": "John Michael Shelby (also known as Johnny and John Boy) is one of the two former tritagonists (alongside Polly Gray) of Peaky Blinders. He is a British street gangster who was a soldier during the First World War. He is the third son of Arthur Shelby Sr, brother of Arthur, Thomas, Ada and Finn Shelby, as well as being the husband of Esme Shelby. John has seven children, two sons and two daughters with his deceased first wife Martha Shelby, and three children with Esme, whose genders are unknown. One of his daughters is called Katie Shelby, but his other children’s names are unknown.",
+        "image": "jshelby"
+    }
+]

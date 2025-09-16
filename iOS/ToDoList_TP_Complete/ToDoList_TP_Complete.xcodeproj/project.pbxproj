@@ -1,0 +1,124 @@
+
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA01 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_APP /* App.swift */; };
+		AA02 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_MODELS /* Models.swift */; };
+		AA03 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_VM /* TaskViewModel.swift */; };
+		AA04 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = REF_VIEWS /* Views.swift */; };
+		AA05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = REF_ASSETS /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		REF_APP /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		REF_MODELS /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		REF_VM /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		REF_VIEWS /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
+		REF_ASSETS /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		REF_PRODUCT /* ToDoList_TP_Complete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList_TP_Complete.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FRAMEWORKS /* Frameworks */ = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = ( ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		GROUP_ROOT = { isa = PBXGroup; children = ( GROUP_SOURCE /* ToDoList_TP_Complete */, GROUP_PRODUCTS /* Products */ ); sourceTree = "<group>"; };
+		GROUP_SOURCE /* ToDoList_TP_Complete */ = { isa = PBXGroup; children = ( REF_APP, GROUP_MODELS /* Models */, GROUP_VMS /* ViewModels */, GROUP_VIEWS /* Views */, REF_ASSETS ); path = ToDoList_TP_Complete; sourceTree = "<group>"; };
+		GROUP_MODELS /* Models */ = { isa = PBXGroup; children = ( REF_MODELS ); path = Models; sourceTree = "<group>"; };
+		GROUP_VMS /* ViewModels */ = { isa = PBXGroup; children = ( REF_VM ); path = ViewModels; sourceTree = "<group>"; };
+		GROUP_VIEWS /* Views */ = { isa = PBXGroup; children = ( REF_VIEWS ); path = Views; sourceTree = "<group>"; };
+		GROUP_PRODUCTS /* Products */ = { isa = PBXGroup; children = ( REF_PRODUCT ); name = Products; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		TARGET /* ToDoList_TP_Complete */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CONFIGLIST_TARGET;
+			buildPhases = ( SOURCES, FRAMEWORKS, RESOURCES );
+			buildRules = ( );
+			dependencies = ( );
+			name = ToDoList_TP_Complete;
+			productName = ToDoList_TP_Complete;
+			productReference = REF_PRODUCT;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PROJECT /* Project object */ = {
+			isa = PBXProject;
+			attributes = { BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 1500; LastUpgradeCheck = 1500; };
+			buildConfigurationList = CONFIGLIST_PROJECT;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = ( en, Base );
+			mainGroup = GROUP_ROOT;
+			productRefGroup = GROUP_PRODUCTS;
+			targets = ( TARGET );
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		RESOURCES = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = ( AA05 ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		SOURCES = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = ( AA01, AA02, AA03, AA04 ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CONFIG_DEBUG = { isa = XCBuildConfiguration; buildSettings = {
+			ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			DEVELOPMENT_TEAM = "";
+			ENABLE_PREVIEWS = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+			INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+			INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+			INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+			INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+			IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = com.example.ToDoListTP;
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SWIFT_VERSION = 5.0;
+			TARGETED_DEVICE_FAMILY = "1,2";
+		}; name = Debug; };
+		CONFIG_RELEASE = { isa = XCBuildConfiguration; buildSettings = {
+			ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			DEVELOPMENT_TEAM = "";
+			ENABLE_PREVIEWS = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+			INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+			INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+			INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+			INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+			IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = com.example.ToDoListTP;
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SWIFT_VERSION = 5.0;
+			TARGETED_DEVICE_FAMILY = "1,2";
+		}; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CONFIGLIST_PROJECT = { isa = XCConfigurationList; buildConfigurations = ( CONFIG_DEBUG, CONFIG_RELEASE ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		CONFIGLIST_TARGET = { isa = XCConfigurationList; buildConfigurations = ( CONFIG_DEBUG, CONFIG_RELEASE ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+
+	};
+	rootObject = PROJECT /* Project object */;
+}
