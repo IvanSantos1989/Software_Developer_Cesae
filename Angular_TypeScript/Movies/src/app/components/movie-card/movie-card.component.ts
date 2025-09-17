@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import {Component, Input, numberAttribute} from '@angular/core';
 
 @Component({
   selector: 'app-movie-card',
@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./movie-card.component.scss']
 })
 export class MovieCardComponent {
-  @Input() id!: number;
+  @Input({transform: numberAttribute}) id!: number;
   @Input() year!: string;
   @Input() title!: string;
   @Input() description!: string;
