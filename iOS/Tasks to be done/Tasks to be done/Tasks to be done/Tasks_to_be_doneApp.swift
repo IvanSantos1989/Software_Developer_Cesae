@@ -12,6 +12,7 @@ struct Tasks_to_be_doneApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .preferredColorScheme(.none) // Allow system color scheme
         }
     }
 }
