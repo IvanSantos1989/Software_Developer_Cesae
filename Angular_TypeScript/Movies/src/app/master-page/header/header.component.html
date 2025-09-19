@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" routerLink="">Movies</a>
+    <a class="navbar-brand" routerLink="/">Movies</a>
 
     <button
       class="navbar-toggler"
@@ -13,12 +13,13 @@
 
     <div class="collapse navbar-collapse" mdbCollapse #basicNavbar="mdbCollapse">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" routerLink="/movies">Listagem</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/movies" routerLinkActive="active">Search by name</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/movie-details" routerLinkActive="active">Search by ID</a></li>
       </ul>
 
       <form class="d-flex" role="search">
-        <input class="form-control me-2" placeholder="Search" aria-label="Search" />
-        <button class="btn btn-primary" type="button" mdbRipple rippleColor="dark">Search</button>
+        <input class="form-control me-2" placeholder="Search (não funcional)" aria-label="Search" />
+        <button class="btn btn-primary" type="button" mdbRipple rippleColor="dark" disabled>Search</button>
       </form>
     </div>
   </div>

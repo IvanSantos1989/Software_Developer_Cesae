@@ -8,6 +8,6 @@ import { MdbRippleModule } from 'mdb-angular-ui-kit/ripple';
   standalone: true,
   imports: [RouterLink, MdbCollapseModule, MdbRippleModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {}

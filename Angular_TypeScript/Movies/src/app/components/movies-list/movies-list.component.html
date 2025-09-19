@@ -1,14 +1,27 @@
-<div class="container my-5">
+<div class="container mt-3 mb-5">
+
+  <div class="row mb-3">
+    <div class="col-md-4 mx-auto">
   <h2 class="mb-4 text-center">Listagem de Filmes</h2>
-  <button (click)="addMovie()" class="btn btn-primary w-100 mb-4">Add Movie</button>
-  <div class="row g-4 justify-content-center">
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let m of movies; let i = index">
+
+      <form>
+        <mdb-form-control>
+          <input name="search" [(ngModel)]="search" mdbInput type="text" id="form1" class="form-control"/>
+          <label mdbLabel class="form-label" for="form1">Search</label>
+        </mdb-form-control>
+      </form>
+
+  <button (click)="getMovies()" type="button" class="btn btn-primary w-100 mt-2" mdbRipple>Search</button>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-md-3" *ngFor="let movie of movies">
       <app-movie-card
-        [id]="i"
-        [year]="m.Year"
-        [title]="m.Title"
-        [description]="'Sem descrição disponível'"
-        [poster]="m.Poster"
+        [id]="movie.imdbID"
+        [year]="movie.Year"
+        [title]="movie.Title"
+        [poster]="movie.Poster"
       />
     </div>
   </div>

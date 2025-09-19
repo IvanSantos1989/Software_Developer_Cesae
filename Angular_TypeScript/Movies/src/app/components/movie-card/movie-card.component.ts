@@ -1,16 +1,18 @@
-import {Component, Input, numberAttribute} from '@angular/core';
+import {Component, Input} from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-movie-card',
   standalone: true,
+  imports: [RouterLink],
   templateUrl: './movie-card.component.html',
   styleUrls: ['./movie-card.component.scss']
 })
 export class MovieCardComponent {
-  @Input({transform: numberAttribute}) id!: number;
+  @Input() id!: string; // imdbID é string (ex: tt1201607)
   @Input() year!: string;
   @Input() title!: string;
-  @Input() description!: string;
+  @Input() description?: string;
   @Input() poster!: string;
 
   onImgError(event: Event) {

@@ -1,0 +1,41 @@
+<div class="movie-details-container container py-4">
+  <h2 class="mb-3">Buscar detalhes do filme</h2>
+  <div class="input-group mb-3">
+    <input class="form-control" [(ngModel)]="movieId" (keyup.enter)="onKeyUpEnter()" placeholder="Digite o ID (ex: tt1201607)" />
+    <button class="btn btn-primary" (click)="searchMovie()" [disabled]="loading">{{ loading ? 'Buscando...' : 'Buscar' }}</button>
+  </div>
+  <div *ngIf="error" class="alert alert-danger py-2">{{ error }}</div>
+  <div *ngIf="loading && !error" class="text-muted">Carregando...</div>
+
+  <div *ngIf="movie" class="card shadow-sm">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-3 mb-3 mb-md-0 text-center">
+          <img *ngIf="movie.Poster && movie.Poster !== 'N/A'" [src]="movie.Poster" [alt]="movie.Title" class="img-fluid rounded" />
+          <div *ngIf="!movie.Poster || movie.Poster === 'N/A'" class="text-muted small">Sem poster</div>
+        </div>
+        <div class="col-md-9">
+          <h3 class="h4">{{ movie.Title }} <small class="text-muted">({{ movie.Year }})</small></h3>
+          <p class="mb-1"><strong>Gênero:</strong> {{ movie.Genre }}</p>
+          <p class="mb-1"><strong>Duração:</strong> {{ movie.Runtime }}</p>
+          <p class="mb-1"><strong>Diretor:</strong> {{ movie.Director }}</p>
+          <p class="mb-1"><strong>Atores:</strong> {{ movie.Actors }}</p>
+          <p class="mb-1"><strong>Idioma:</strong> {{ movie.Language }}</p>
+          <p class="mb-1"><strong>País:</strong> {{ movie.Country }}</p>
+          <p class="mb-1"><strong>Lançamento:</strong> {{ movie.Released }}</p>
+          <p class="mb-2"><strong>Sinopse:</strong><br>{{ movie.Plot }}</p>
+          <p class="mb-1"><strong>IMDB ID:</strong> {{ movie.imdbID }}</p>
+          <p class="mb-1" *ngIf="movie.imdbRating"><strong>IMDB Rating:</strong> {{ movie.imdbRating }}</p>
+          <p class="mb-3" *ngIf="movie.BoxOffice"><strong>Bilheteria:</strong> {{ movie.BoxOffice }}</p>
+          <div *ngIf="movie.Ratings?.length">
+            <strong>Ratings:</strong>
+            <ul class="small mb-2">
+              <li *ngFor="let r of movie.Ratings">{{ r.Source }}: {{ r.Value }}</li>
+            </ul>
+          </div>
+          <a class="btn btn-outline-secondary btn-sm" routerLink="/movies">Voltar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

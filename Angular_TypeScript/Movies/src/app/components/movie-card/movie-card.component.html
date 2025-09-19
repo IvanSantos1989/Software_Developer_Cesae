@@ -1,9 +1,9 @@
-<div class="card h-100 shadow-sm">
+<div class="card h-100 shadow-sm" [routerLink]="['/movie-details', id]" style="cursor:pointer" role="button" title="Ver detalhes">
   <img [src]="poster" [alt]="title" class="card-img-top" (error)="onImgError($event)" />
   <div class="card-body">
     <h5 class="card-title mb-1">{{ title }}</h5>
     <p class="card-subtitle text-muted mb-2">ID: {{ id }} • Ano: {{ year }}</p>
-    <p class="card-text">{{ description }}</p>
+    <p class="card-text" *ngIf="description">{{ description }}</p>
     <p class="text-muted small mb-0"><strong>Poster URL:</strong> {{ poster }}</p>
   </div>
 </div>
